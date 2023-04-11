@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tomás Echeveste Arteaga">
+    <meta name="description" content="See the characters of Helion. Learn of their story, their victories and their defeat and how they make the world a more intresting place.">
+    <meta name="keywords" content="Medieval fantasy, Humans, Angels, Demons, Elves, Dwarves, Magic, Swords, Dragons, Adventure, Epic, Creatures, Monsters, Heroes, Villains, Legends, Lore, Kingdoms, Fantasy races, Roleplaying games, Character creation, Spells, Enchantments, Artifacts, Objets of power, Mythical beasts, Legends and tales, Worldbuilding, Maps, Languages, Cultures, Religion, History, Timeline, Story, Helion">
+    <!-- Title -->
+    <title>Characters</title>
+    <!-- Favicon -->
+	<link rel="shortcut icon" href="favicon/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="https://i.imgur.com/7hn5qYu.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="https://i.imgur.com/JZNvMDp.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://i.imgur.com/Nl8k8tu.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="https://i.imgur.com/4d46PNK.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/uDhtSKF.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/6EAgEbz.png">
+	<link rel="apple-touch-icon" href="https://i.imgur.com/8ZBTDZ6.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://i.imgur.com/0n9O6IR.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://i.imgur.com/Eu2AECE.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://i.imgur.com/eYpAMEb.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://i.imgur.com/JyRndLE.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://i.imgur.com/8L1WHMv.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://i.imgur.com/9QxfNgk.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://i.imgur.com/eDRyA8R.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://i.imgur.com/yRw5mnS.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="https://i.imgur.com/eYpAMEb.png">
+	<meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <!-- Fonts -->
+    <!-- LHF Encore -->
+    <link href="//db.onlinewebfonts.com/c/64c956423d2c564f7ff1d44d76809e95?family=LHFEncoreRegular" rel="stylesheet" type="text/css"/>
+    <!-- Bentham -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
+    <!-- Libraries -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!-- Body -->
+<body>
+    <h1 style="display: none;">Helion</h1> <!-- Only for HTML5 outline purposes -->
+
+    <!-- Logo -->
+    <div class="logo">
+        <a href="../index.html" class="logo__img"><img src="https://i.imgur.com/lOWlCyK.jpg" alt=""></a>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <hr>
+
+            <h2 style="display: none;">Main navigation bar</h2> <!-- Only for HTML5 outline purposes -->
+
+            <a class="navbar__menu" href="javascript:void(0);" onclick="openMenu()">
+                <i class="fa fa-bars" id="nav-icon"></i>
+            </a>
+
+            <ul class="navbar__list" id="nav-list">
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="races.html">Races</a></li>
+                <li><a href="characters.html" class="navbar__item navbar__item--active">Characters</a></li>
+
+                <li class="dropdown">
+                    <button class="dropdown__button" onclick="openDropdown()" id="nav-btn">Language
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+
+                    <div class="dropdown__content" id="nav-lang">
+                        <a href="#" class="dropdown__language dropdown__language--active">English</a>
+                        <a href="#">Español</a>
+                    </div>
+                </li>
+            </ul>
+
+            <hr>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Introductory Section -->
+        <section class="introduction">
+            <h2>The Characters of Helion</h2>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, odio? Impedit voluptate ducimus facere soluta, alias quos est ad repudiandae possimus consequuntur voluptatum maxime voluptas eveniet, expedita odit quisquam repellendus?</p>
+        </section>
+
+        <hr>
+
+        <!-- Organization Section -->
+        <section class="organization">
+            <h3>The Organizations of Helion</h3>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus harum sunt quasi quis. Eos modi iusto sequi cupiditate pariatur numquam quibusdam explicabo quis! Unde labore nihil laborum aliquam libero!</p>
+
+            <!-- Gallery of organizations -->
+            <div class="gallery">
+                <div class="image image--margin--top organization__organization-1">
+                    <h4>Organization 1</h4>
+                    <a href="#"><img class="image__item--aspect-ratio" src="https://i.imgur.com/P0HeFwK.jpg" alt="A group of nobles sitting around a large table with a sketch of a city drawn on it, and money bags sitting on top of it."></a>
+                </div>
+                <div class="image organization__organization-2">
+                    <h4>Organization 2</h4>
+                    <a href="#"><img class="image__item--aspect-ratio" src="https://i.imgur.com/9n84u0y.jpg" alt="A group of red cloaked knights standing around a round table."></a>
+                </div>
+                <div class="image">
+                    <h4>Organization 3</h4>
+                    <a href="#"><img class="image__item--aspect-ratio" src="https://i.imgur.com/gYneNjX.jpg" alt="An army of elite soldiers wearing winged helmets, spears, tower shields and ornate armor."></a>
+                </div>
+                <div class="image organization__organization-4">
+                    <h4>Organization 4</h4>
+                    <a href="#"><img class="image__item--aspect-ratio" src="https://i.imgur.com/0M60WgS.jpg" alt="A ceremonial room filled with candles and with floating spheres around it and in the center."></a>
+                </div>
+                <div class="image">
+                    <h4>Organization 5</h4>
+                    <a href="#"><img class="image__item--aspect-ratio" src="https://i.imgur.com/jTYmGV0.jpg" alt="A group of thieves standing at the sides of a throne where another hooded thieve is sitting. Skull, dagger and key flag hanging on the wall in the back."></a>
+                </div>
+                <div class="image">
+                    <h4>Organization 6</h4>
+                    <a href="#"><img class="image__item--aspect-ratio" src="https://i.imgur.com/0N6YXRI.jpg" alt="A group of mystical warrior wearing robes and metal masks, the first one carrying a glowing sword."></a>
+                </div>
+                <div class="image">
+                    <h4>Organization 7</h4>
+                    <a href="#"><img class="image__item--aspect-ratio" src="https://i.imgur.com/87LvAfO.jpg" alt="A group of adventurers wearing similar shoulder armor looking towards something. Floating vehicles in the back."></a>
+                </div>
+                <div class="image">
+                    <h4>Organization 8</h4>
+                    <a href="#"><img class="image__item--aspect-ratio" src="https://i.imgur.com/Iwzo2rL.jpg" alt="A group of adventurers in a bar some looking at a map, others drinking, playing the flute and a barkeep reading a book."></a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Artifact Section -->
+        <section class="artifact">
+
+            <h3>The Artifacts of Helion</h3>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur accusamus harum sunt quasi quis. Eos modi iusto sequi cupiditate pariatur numquam quibusdam explicabo quis! Unde labore nihil laborum aliquam libero!</p>
+
+            <!-- Gallery of artifacts -->
+            <div class="gallery">
+                <div class="image image--margin--top artifact__artifact-1">
+                    <h4>Artifact 1</h4>
+                    <a href="#"><img src="https://i.imgur.com/uFeYN7l.jpg" alt="A black ring with silver sigils engraved along it."></a>
+                </div>
+                <div class="image">
+                    <h4>Artifact 2</h4>
+                    <a href="#"><img src="https://i.imgur.com/jcN2T0K.jpg" alt="A wizard's staff, dark colored with a blue crystal ball in the top."></a>
+                </div>
+                <div class="image artifact__artifact-3">
+                    <h4>Artifact 3</h4>
+                    <a href="#"><img src="https://i.imgur.com/gGjSE8Z.jpg" alt="A green medallion with serpents in the center."></a>
+                </div>
+                <div class="image">
+                    <h4>Artifact 4</h4>
+                    <a href="#"><img src="https://i.imgur.com/qRXySNq.jpg" alt="A golden double axe filled with ornamentation and an emerald encrusted in the center."></a>
+                </div>
+                <div class="image">
+                    <h4>Artifact 5</h4>
+                    <a href="#"><img src="https://i.imgur.com/TVYhfRW.jpg" alt="A black spear with ornamentation, glowing with power."></a>
+                </div>
+                <div class="image">
+                    <h4>Artifact 6</h4>
+                    <a href="#"><img src="https://i.imgur.com/lnIppUW.jpg" alt="A silver small peculiar looking hammer with elvish writing and ornamentation."></a>
+                </div>
+                <div class="image artifact__artifact-7">
+                    <h4>Artifact 7</h4>
+                    <a href="#"><img src="https://i.imgur.com/EZxvVRx.jpg" alt="A black sphere emanating flames with a dragon figure sleeping on top of it."></a>
+                </div>
+                <div class="image">
+                    <h4>Artifact 8</h4>
+                    <a href="#"><img src="https://i.imgur.com/IcXR1QF.png" alt="A beautiful white wedding dress with golden embroidery."></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Updates section -->
+        <section class="newsletter">
+            <h3>Sign up for updates</h3>
+
+            <span class="subtitle">Be the first to get exclusive updates, sneak previews, and more!</span>
+
+            <!-- Form for updates -->
+            <form action="#" class="form newsletter__form">
+
+                <div>
+                    <div>
+                        <label for="name-newsletter">First Name</label>
+                        <input type="text" name="name" id="name-newsletter" placeholder="John" required>
+                    </div>
+
+                    <div>
+                        <label for="surname-newsletter">Last Name</label>
+                        <input type="text" name="surname" id="surname-newsletter" placeholder="Doe" required>
+                    </div>
+
+                    <div>
+                        <label for="email-newsletter">Email Address:</label>
+                        <input type="email" name="email" id="email-newsletter" placeholder="John_Doe@gmail.com" required>
+                    </div>
+                </div>
+
+                <label for="age-newsletter" class="form__checkbox-label">Are you 13 years or older?</label>
+                <input type="checkbox" name="age" id="age-newsletter" class="form__checkbox">
+
+                <input class="form__submit" type="submit" value="Sign Up" class="submit">
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Follow section -->
+        <section class="follow">
+            <h3>Follow us</h3>
+
+            <div>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"><img src="https://i.imgur.com/XJbQoIy.png" alt="Facebook logo"></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener"><img src="https://i.imgur.com/2k4tFIo.png" alt="Twitter logo"></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"><img src="https://i.imgur.com/0SjdA8U.png" alt="Instagram logo"></a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"><img src="https://i.imgur.com/jvuMrf4.png" alt="Youtube logo"></a>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Copyright section -->
+        <section class="copyright">
+            <h3 style="display: none;">© All rights reserved Helion 2023</h3> <!-- Only for HTML5 outline purposes -->
+
+            <div class="copyright__content">
+                <div class="copyright__helion">
+                    <span>© All rights reserved Helion 2023</span>
+                    <span>Website designed by Tomás Echeveste Arteaga</span>
+                </div>
+                <div class="copyright__terms">
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Legal Notice</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- JS -->
+    <script src="../js/app.js"></script>
+</body>
+</html>
