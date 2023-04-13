@@ -215,13 +215,13 @@ header {
 	background-color: var(--highlight-color);
 }
 
+/* Dropdown content of the navbar */
 .dropdown__button {
 	width: 100%;
 	text-align: left;
 	cursor: pointer;
 }
 
-/* Dropdown content of the navbar */
 .dropdown__button i {
 	font-size: .52em;
 	position: relative;
