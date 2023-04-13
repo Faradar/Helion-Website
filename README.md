@@ -55,4 +55,4 @@ To do:
 
 
 ## Contact
-Created by [Tomás Echeveste Arteaga](https://github.com/faradar) - feel free to contact me!
+Created by [Tomás Echeveste Arteaga](https://github.com/faradar) - feel free to contact me at <echeveste.t@gmail.com>
