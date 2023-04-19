@@ -1,0 +1,51 @@
+/* Images */
+.image {
+	width: 90%;
+	aspect-ratio: 1;
+	margin: 1em auto 0;
+	border: solid 3px $highlight-color;
+	max-width: 300px;
+	object-fit: cover;
+	overflow: hidden;
+
+    &--margin--top {
+        margin-top: 1.5em;
+    }
+
+    &__item--aspect-ratio {
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+}
+
+/* ---------- Media Queries ---------- */
+
+/* ---------- 600px ---------- */
+@media screen and (min-width: 37.5em) {
+
+	/* Images */
+	.gallery {
+		max-width: 985px;
+		margin: 0 auto;
+		padding: 0 1em;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-end;
+		gap: 1em;
+	}
+
+	.image {
+		flex-basis: 50%;
+	}
+}
+
+/* ---------- 1312px ---------- */
+@media screen and (min-width: 84em) {
+
+	/* Images */
+	.gallery {
+		max-width: 1585px;
+	}
+}

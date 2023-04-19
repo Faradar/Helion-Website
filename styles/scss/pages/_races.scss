@@ -1,0 +1,49 @@
+/* ---------- Races Page ---------- */
+
+/* Races Section */
+.races {
+
+    > div {
+        padding: 1.5em 0;
+
+        > h3 {
+            padding-bottom: 1em;
+        }
+
+        > div > h4 {
+            padding-bottom: 0.7em;
+        }
+    }
+
+    .races__1st {
+        padding-top: 0;
+    }
+
+    .races__5th {
+        padding-bottom: 0;
+    }
+
+    &__race-4 a img {
+        object-position: 0 -20px;
+    }
+
+    &__race-9 a img {
+        object-position: left;
+    }
+
+    &__race-11 a img {
+        object-position: 0 -30px;
+    }
+
+    &__race-12 a img {
+        object-position: top;
+    }
+
+    &__race-18 a img {
+        object-position: -100px -50px;
+    }
+
+    &__race-20 a img {
+        object-position: 0 -15px;
+    }
+}

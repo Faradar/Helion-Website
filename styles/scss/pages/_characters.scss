@@ -1,0 +1,33 @@
+/* ---------- Characters Page ---------- */
+
+/* Organization Section */
+.organizations__organization {
+
+    &-1 a img {
+        object-position: 0 -25px;
+    }
+
+    &-2 a img {
+        object-position: 0 -130px;
+    }
+
+    &-4 a img {
+        object-position: -50px -50px;
+    }
+}
+
+/* Artifact Section */
+.artifacts__artifact {
+
+    &-1 a img{
+        object-position: 0 -25px;
+    }
+
+    &-3 a img {
+        object-position: 0 -150px;
+    }
+
+    &-7 a img {
+        object-position: 0 -50px;
+    }
+}

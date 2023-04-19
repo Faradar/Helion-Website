@@ -1,0 +1,30 @@
+/* ---------- Timeline Page ---------- */
+
+/* Era Section */
+.era {
+
+    article {
+        padding-bottom: 1.5em;
+    }
+
+    &__dawn {
+        padding-top: 0;
+    }
+
+    &__first .image img {
+        transform: translate(0, -10%);
+    }
+
+    &__second .image img {
+        transform: translate(0, -10%);
+    }
+
+    .era__third--padding {
+        padding-bottom: 0;
+    }
+
+    &__third .image img {
+        transform: scale(1.5);
+        object-position: 20px;
+    }
+}

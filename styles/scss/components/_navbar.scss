@@ -1,0 +1,111 @@
+/* Navbar */
+.navbar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+    hr {
+        display: block;
+        width: 100%;
+    }
+
+    a {
+        padding: 0.6em 0.4em;
+    }
+
+    &__list {
+        display: none;
+
+        width: 100%;
+        border: solid 2px $highlight-color;
+        margin-bottom: 0.2em;
+
+        a:hover:not(.navbar__item--active, .dropdown__language--active) {
+            background-color: $highlight-color;
+        }
+    }
+
+    &__item--active {
+        color: $highlight-color;
+    }
+}
+
+/* Dropdown content of the navbar */
+.dropdown {
+
+    &__button {
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        padding: 0.6em 0.4em;
+
+        &:hover {
+            background-color: $highlight-color;
+        }
+
+        i {
+            font-size: .52em;
+            position: relative;
+            bottom: 2px;
+            margin-left: 0.1em;
+        }
+    }
+
+    &__content {
+        display: none;
+        background-color: $background-color;
+        min-width: 160px;
+        z-index: 1;
+        border: solid 2px $highlight-color;
+
+        a {
+            padding-left: 0.8em;
+        }
+    }
+
+    .dropdown__content .dropdown__language--active {
+        color: $highlight-color;
+        background-color: $background-color;
+    }
+}
+
+/* ---------- Media Queries ---------- */
+
+/* ---------- 600px ---------- */
+@media screen and (min-width: 37.5em) {
+
+    /* Navbar */
+    .navbar {
+
+        &__menu {
+            display: none;
+        }
+
+        &__list {
+            border: none;
+
+            display: flex;
+            justify-content: space-evenly;
+
+            > li > a:hover:not(.navbar__item--active) {
+                background-color: $background-color;
+                color: $highlight-color;
+            }
+        }
+    }
+
+    /* Dropdown content */
+    .dropdown {
+
+        &__button:hover {
+            background-color: $background-color;
+            color: $highlight-color;
+        }
+
+        &__content {
+            position: absolute;
+            top: 65px;
+            min-width: 120px;
+        }
+    }
+}

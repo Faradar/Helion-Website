@@ -3,6 +3,9 @@ const navList = document.getElementById("nav-list");
 const navIcon = document.getElementById("nav-icon");
 const navLang = document.getElementById("nav-lang");
 const navBtn = document.getElementById("nav-btn");
+const backCol = "#000000"; /* Background color variable from scss */
+const highCol = "#c2a775"; /* Highlight color variable from scss */
+const textCol = "#ffffff"; /* Text color variable from scss */
 
 /* Changes the background color of the button on mouse behaviour */
 function mouseBtnBack(a, b) {
@@ -33,19 +36,19 @@ mql.onchange = (e) => {
         navList.style.display = "flex";
         navIcon.className = "fa fa-bars";
         navLang.style.display = "none";
-        navBtn.style.backgroundColor = "var(--background-color)";
-        navBtn.style.color = "var(--text-color)";
+        navBtn.style.backgroundColor = backCol;
+        navBtn.style.color = textCol;
 
-        mouseBtnCol("var(--highlight-color)", "var(--text-color)");
+        mouseBtnCol(highCol, textCol);
 
     } else {
         /* The viewport is 600 pixels wide or less */
         navList.style.display = "none";
         navLang.style.display = "none";
-        navBtn.style.backgroundColor = "var(--background-color)";
-        navBtn.style.color = "var(--text-color)";
+        navBtn.style.backgroundColor = backCol;
+        navBtn.style.color = textCol;
 
-        mouseBtnBack("var(--highlight-color)", "var(--background-color)");
+        mouseBtnBack(highCol, backCol);
     }
 };
 
@@ -68,27 +71,27 @@ function openDropdown() {
         navLang.style.display = "none";
 
         if (!mql.matches) {
-            navBtn.style.backgroundColor = "var(--highlight-color)";
+            navBtn.style.backgroundColor = highCol;
 
-            mouseBtnBack("var(--highlight-color)", "var(--background-color)");
+            mouseBtnBack(highCol, backCol);
 
         } else {
-            navBtn.style.backgroundColor = "var(--background-color)";
-            navBtn.style.color = "var(--highlight-color)";
+            navBtn.style.backgroundColor = backCol;
+            navBtn.style.color = highCol;
 
-            mouseBtnCol("var(--highlight-color)", "inherit");
+            mouseBtnCol(highCol, "inherit");
         }
 
     } else {
         navLang.style.display = "block";
 
         if (!mql.matches) {
-            mouseBtnBack("var(--highlight-color)", "var(--highlight-color)");
+            mouseBtnBack(highCol, highCol);
 
         } else {
-            navBtn.style.color = "var(--highlight-color)";
+            navBtn.style.color = highCol;
 
-            mouseBtnCol("var(--highlight-color)", "var(--highlight-color)");
+            mouseBtnCol(highCol, highCol);
         }
     }
 }

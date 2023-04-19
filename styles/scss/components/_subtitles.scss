@@ -1,0 +1,11 @@
+/* Subtitles */
+.subtitle {
+	display: block;
+
+	font-family: $title-type;
+	font-size: 2rem;
+
+	color: $title-color;
+	margin: 0.2em 0.4em 0.8em;
+	line-height: 1em;
+}

@@ -1,0 +1,57 @@
+/* ---------- Media Queries ---------- */
+
+/* ---------- 768px ---------- */
+@media screen and (min-width: 48em) {
+
+	/* ---------- Index Page ---------- */
+
+	/* Explore Section */
+	.explore__articles {
+		display: flex;
+		flex-wrap: wrap;
+
+        > article:not(.explore__more) {
+            flex-basis: 50%;
+        }
+	}
+
+	/* News Section */
+	.news__destination {
+		margin-top: 2em;
+	}
+
+	/* Get in Touch Section */
+
+	/* Form */
+	.contact__form > div:first-child {
+		max-width: 700px;
+		margin: 0 auto;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.form__message {
+		max-width: 650px;
+		margin: 0 auto;
+
+        * {
+            width: 100%;
+        }
+
+        label {
+            margin: 0 0 0.5em;
+        }
+	}
+}
+
+/* ---------- 1200px ---------- */
+@media screen and (min-width: 75em) {
+
+	/* ---------- Index Page ---------- */
+
+	/* Explore Section */
+	.explore__articles > article:not(.explore__more) {
+		flex-basis: 25%;
+	}
+}

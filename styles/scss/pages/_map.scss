@@ -1,0 +1,21 @@
+/* ---------- Map Page ---------- */
+
+/* Map Section */
+.map {
+	width: 90%;
+	margin: 1em auto 0;
+
+    img {
+        border: solid 3px $hover-color;
+    }
+
+    figcaption {
+        font-size: 1.2rem;
+        color: $copyright-color;
+    }
+}
+
+/* Places Section */
+.places__place-2 a img {
+	object-position: 0 -20px;
+}

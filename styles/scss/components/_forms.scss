@@ -1,0 +1,57 @@
+/* Forms */
+.form {
+	text-align: left;
+
+    label {
+        width: clamp(10px, 90%, 300px);
+        margin: 0 auto 0.5em;
+    }
+
+    input, &__textarea{
+        width: clamp(10px, 90%, 300px);
+        margin: 0 auto 1em;
+        border: solid 1px #666;
+        border-radius: 3px;
+        background-color: $text-color;
+        color: $background-color;
+        padding: 0.3em;
+    }
+
+    .form__verification {
+
+        * {
+            text-align: center;
+        }
+
+        .form__math {
+            width: 150px;
+        }
+    }
+
+    .form__submit {
+        cursor: pointer;
+        margin: 2em auto 0;
+        width: 100px;
+        background-color: $hover-color;
+        color: $background-color;
+
+        &:hover {
+            background-color: $title-color;
+            transition-property: background-color;
+            transition-duration: 0.5s;
+        }
+    }
+
+    .form__checkbox-label {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .form__checkbox {
+        width: 1em;
+        height: 1em;
+        margin: 0 auto;
+        cursor: pointer;
+        accent-color: $title-color;
+    }
+}
