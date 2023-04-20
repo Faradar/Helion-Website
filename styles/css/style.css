@@ -99,7 +99,13 @@ body {
 /* Variables */
 /* Colors */
 /* Typography */
-/* Mixins */ /* General Styling */
+/* Mixins */
+/* Media Queries */
+/* 600px */
+/* 768px */
+/* 1200px */
+/* 1312px */
+/* General Styling */
 /* Configure the text that we select */
 ::selection {
   background-color: #feab42;
@@ -162,10 +168,8 @@ p {
   padding-top: 1.5em;
 }
 
-/* ---------- Media Queries ---------- */
-/* ---------- 768px ---------- */
+/* Grid image + text sections */
 @media screen and (min-width: 48em) {
-  /* Grid image + text sections */
   .grid-display {
     max-width: 900px;
     margin: 0 auto 0;
@@ -182,6 +186,7 @@ p {
     grid-column: 2/3;
   }
 }
+
 /* Components */
 /* Images */
 .image {
@@ -200,11 +205,13 @@ p {
   aspect-ratio: 1;
   object-fit: cover;
 }
-
-/* ---------- Media Queries ---------- */
-/* ---------- 600px ---------- */
 @media screen and (min-width: 37.5em) {
-  /* Images */
+  .image {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
   .gallery {
     max-width: 985px;
     margin: 0 auto;
@@ -215,17 +222,13 @@ p {
     align-items: flex-end;
     gap: 1em;
   }
-  .image {
-    flex-basis: 50%;
-  }
 }
-/* ---------- 1312px ---------- */
 @media screen and (min-width: 84em) {
-  /* Images */
   .gallery {
     max-width: 1585px;
   }
 }
+
 /* Subtitles */
 .subtitle {
   display: block;
@@ -329,6 +332,20 @@ header {
 .navbar__item--active {
   color: #c2a775;
 }
+@media screen and (min-width: 37.5em) {
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__list {
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .navbar__list > li > a:hover:not(.navbar__item--active) {
+    background-color: #000000;
+    color: #c2a775;
+  }
+}
 
 /* Dropdown content of the navbar */
 .dropdown__button {
@@ -360,24 +377,7 @@ header {
   color: #c2a775;
   background-color: #000000;
 }
-
-/* ---------- Media Queries ---------- */
-/* ---------- 600px ---------- */
 @media screen and (min-width: 37.5em) {
-  /* Navbar */
-  .navbar__menu {
-    display: none;
-  }
-  .navbar__list {
-    border: none;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .navbar__list > li > a:hover:not(.navbar__item--active) {
-    background-color: #000000;
-    color: #c2a775;
-  }
-  /* Dropdown content */
   .dropdown__button:hover {
     background-color: #000000;
     color: #c2a775;
@@ -388,6 +388,7 @@ header {
     min-width: 120px;
   }
 }
+
 /* Footer */
 /* Follow section */
 .follow div {
@@ -416,51 +417,41 @@ header {
 .copyright div a:hover {
   color: #feab42;
 }
-
-/* ---------- Media Queries ---------- */
-/* ---------- 600px ---------- */
 @media screen and (min-width: 37.5em) {
-  /* Footer */
-  /* Copyright Section */
   .copyright .copyright__terms {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 }
-/* ---------- 768px ---------- */
 @media screen and (min-width: 48em) {
-  /* Footer */
-  /* Updates Section */
-  .newsletter__form > div:first-child {
-    width: clamp(10px, 95%, 1000px);
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  /* Copyright Section */
   .copyright .copyright__helion {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 }
-/* ---------- 1200px ---------- */
 @media screen and (min-width: 75em) {
-  /* Footer */
-  /* Copyright Section */
   .copyright .copyright__content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 }
-/* Pages */
-/* ---------- Media Queries ---------- */
-/* ---------- 768px ---------- */
+
+/* Updates Section */
 @media screen and (min-width: 48em) {
-  /* ---------- Index Page ---------- */
-  /* Explore Section */
+  .newsletter__form > div:first-child {
+    width: clamp(10px, 95%, 1000px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Pages */
+/* Explore Section */
+@media screen and (min-width: 48em) {
   .explore__articles {
     display: flex;
     flex-wrap: wrap;
@@ -468,37 +459,41 @@ header {
   .explore__articles > article:not(.explore__more) {
     flex-basis: 50%;
   }
-  /* News Section */
+}
+@media screen and (min-width: 48em) and (min-width: 75em) {
+  .explore__articles > article:not(.explore__more) {
+    flex-basis: 25%;
+  }
+}
+
+/* News Section */
+@media screen and (min-width: 48em) {
   .news__destination {
     margin-top: 2em;
   }
-  /* Get in Touch Section */
-  /* Form */
+}
+
+/* Get in Touch Section */
+/* Form */
+@media screen and (min-width: 48em) {
   .contact__form > div:first-child {
     max-width: 700px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .form__message {
+  .contact__message {
     max-width: 650px;
     margin: 0 auto;
   }
-  .form__message * {
+  .contact__message * {
     width: 100%;
   }
-  .form__message label {
+  .contact__message label {
     margin: 0 0 0.5em;
   }
 }
-/* ---------- 1200px ---------- */
-@media screen and (min-width: 75em) {
-  /* ---------- Index Page ---------- */
-  /* Explore Section */
-  .explore__articles > article:not(.explore__more) {
-    flex-basis: 25%;
-  }
-}
+
 /* ---------- Timeline Page ---------- */
 /* Era Section */
 .era article {

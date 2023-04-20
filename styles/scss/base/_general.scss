@@ -63,15 +63,10 @@ p {
 	}
 }
 
+/* Grid image + text sections */
+.grid-display {
 
-
-/* ---------- Media Queries ---------- */
-
-/* ---------- 768px ---------- */
-@media screen and (min-width: 48em) {
-
-	/* Grid image + text sections */
-	.grid-display {
+	@include tablet() {
 		max-width: 900px;
 		margin: 0 auto 0;
 

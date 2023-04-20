@@ -28,6 +28,24 @@
     &__item--active {
         color: $highlight-color;
     }
+
+    @include mobile-lg() {
+        &__menu {
+            display: none;
+        }
+
+        &__list {
+            border: none;
+
+            display: flex;
+            justify-content: space-evenly;
+
+            > li > a:hover:not(.navbar__item--active) {
+                background-color: $background-color;
+                color: $highlight-color;
+            }
+        }
+    }
 }
 
 /* Dropdown content of the navbar */
@@ -67,36 +85,8 @@
         color: $highlight-color;
         background-color: $background-color;
     }
-}
 
-/* ---------- Media Queries ---------- */
-
-/* ---------- 600px ---------- */
-@media screen and (min-width: 37.5em) {
-
-    /* Navbar */
-    .navbar {
-
-        &__menu {
-            display: none;
-        }
-
-        &__list {
-            border: none;
-
-            display: flex;
-            justify-content: space-evenly;
-
-            > li > a:hover:not(.navbar__item--active) {
-                background-color: $background-color;
-                color: $highlight-color;
-            }
-        }
-    }
-
-    /* Dropdown content */
-    .dropdown {
-
+    @include mobile-lg() {
         &__button:hover {
             background-color: $background-color;
             color: $highlight-color;
