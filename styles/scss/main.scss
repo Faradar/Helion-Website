@@ -1,5 +1,7 @@
 /* Este archivo no hay codigo o estilos, lo unico que debe haber son imports */
 
+/* Main */
+
 /* Reset, Variables, Mixins and General Styles */
 @import "./base/reset";
 @import "./base/variables";
@@ -8,11 +10,14 @@
 
 /* Components */
 @import "./components/images";
-@import "./components/subtitles";
+@import "./components/gallery";
+@import "./components/subtitle";
 @import "./components/forms";
-@import "./components/header";
+@import "./components/logo";
 @import "./components/navbar";
 @import "./components/footer";
+@import "./components/introduction";
+@import "./components/grid-display";
 
 /* Pages */
 @import "./pages/index";

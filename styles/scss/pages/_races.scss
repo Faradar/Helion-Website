@@ -1,17 +1,27 @@
-/* ---------- Races Page ---------- */
-
 /* Races Section */
 .races {
 
     > div {
         padding: 1.5em 0;
 
-        > h3 {
+        h3 {
             padding-bottom: 1em;
         }
 
-        > div > h4 {
+        h4 {
             padding-bottom: 0.7em;
+        }
+    }
+
+    &__gallery {
+        @extend .gallery;
+
+        > div {
+            @extend .image;
+
+            img {
+                @extend .image__item--aspect-ratio;
+            }
         }
     }
 
@@ -23,27 +33,30 @@
         padding-bottom: 0;
     }
 
-    &__race-4 a img {
-        object-position: 0 -20px;
-    }
+    &__race {
 
-    &__race-9 a img {
-        object-position: left;
-    }
+        &-4 a img {
+            object-position: 0 -20px;
+        }
 
-    &__race-11 a img {
-        object-position: 0 -30px;
-    }
+        &-9 a img {
+            object-position: left;
+        }
 
-    &__race-12 a img {
-        object-position: top;
-    }
+        &-11 a img {
+            object-position: 0 -30px;
+        }
 
-    &__race-18 a img {
-        object-position: -100px -50px;
-    }
+        &-12 a img {
+            object-position: top;
+        }
 
-    &__race-20 a img {
-        object-position: 0 -15px;
+        &-18 a img {
+            object-position: -100px -50px;
+        }
+
+        &-20 a img {
+            object-position: 0 -15px;
+        }
     }
 }

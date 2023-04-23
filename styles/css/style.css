@@ -1,4 +1,5 @@
 /* Este archivo no hay codigo o estilos, lo unico que debe haber son imports */
+/* Main */
 /* Reset, Variables, Mixins and General Styles */
 /* Reset CSS */
 /* Reset Custom properties */
@@ -96,11 +97,9 @@ body {
   background-color: #ececec;
 }
 
-/* Variables */
 /* Colors */
 /* Typography */
-/* Mixins */
-/* Media Queries */
+/* ---------- Media Queries ---------- */
 /* 600px */
 /* 768px */
 /* 1200px */
@@ -117,6 +116,7 @@ body {
   background-color: #000000;
   color: #ffffff;
   font-size: 1.4rem;
+  line-height: 1.4em;
 }
 
 hr {
@@ -160,36 +160,15 @@ p {
   margin: 0.5em auto 0;
 }
 
-/* Introduction Section */
-.introduction {
-  padding-top: 0;
-}
-.introduction--padding {
-  padding-top: 1.5em;
-}
-
-/* Grid image + text sections */
-@media screen and (min-width: 48em) {
-  .grid-display {
-    max-width: 900px;
-    margin: 0 auto 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
-  .grid-display a, .grid-display img {
-    margin-top: 0;
-    grid-row: 1/3;
-    grid-column: 1/2;
-  }
-  .grid-display--reverse a {
-    grid-column: 2/3;
-  }
+header {
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 /* Components */
-/* Images */
-.image {
+.image, .artifacts__gallery > div, .organizations__gallery > div, .races__gallery > div, .places__gallery > div, .era article a, .author img, .news article a {
   width: 90%;
   aspect-ratio: 1;
   margin: 1em auto 0;
@@ -198,21 +177,21 @@ p {
   object-fit: cover;
   overflow: hidden;
 }
-.image--margin--top {
+.image--margin--top, .artifacts__gallery .artifacts__artifact-1, .organizations__gallery .organizations__organization-1, .places .places__place-1 {
   margin-top: 1.5em;
 }
-.image__item--aspect-ratio {
+.image__item--aspect-ratio, .organizations__gallery > div img, .races__gallery > div img, .places__gallery > div img, .era .era__third a img, .era .era__dawn a img {
   aspect-ratio: 1;
   object-fit: cover;
 }
 @media screen and (min-width: 37.5em) {
-  .image {
+  .image, .artifacts__gallery > div, .organizations__gallery > div, .races__gallery > div, .places__gallery > div, .era article a, .author img, .news article a {
     flex-basis: 50%;
   }
 }
 
 @media screen and (min-width: 37.5em) {
-  .gallery {
+  .gallery, .artifacts__gallery, .organizations__gallery, .races__gallery, .places__gallery {
     max-width: 985px;
     margin: 0 auto;
     padding: 0 1em;
@@ -224,12 +203,11 @@ p {
   }
 }
 @media screen and (min-width: 84em) {
-  .gallery {
+  .gallery, .artifacts__gallery, .organizations__gallery, .races__gallery, .places__gallery {
     max-width: 1585px;
   }
 }
 
-/* Subtitles */
 .subtitle {
   display: block;
   font-family: "LHFEncoreRegular";
@@ -239,7 +217,6 @@ p {
   line-height: 1em;
 }
 
-/* Forms */
 .form {
   text-align: left;
 }
@@ -271,8 +248,7 @@ p {
 }
 .form .form__submit:hover {
   background-color: #feab42;
-  transition-property: background-color;
-  transition-duration: 0.5s;
+  transition: background-color 1s;
 }
 .form .form__checkbox-label {
   text-align: center;
@@ -286,15 +262,6 @@ p {
   accent-color: #feab42;
 }
 
-/* Header */
-header {
-  background-color: #000000;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-/* Logo */
 .logo {
   height: 37vw;
   max-height: 140px;
@@ -307,11 +274,11 @@ header {
   max-width: 380px;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Dropdown content of the navbar */
 }
 .navbar hr {
   display: block;
@@ -325,8 +292,12 @@ header {
   width: 100%;
   border: solid 2px #c2a775;
   margin-bottom: 0.2em;
+  /* Animation */
+  animation-name: open-menu;
+  animation-duration: 0.3s;
+  transform-origin: top;
 }
-.navbar__list a:hover:not(.navbar__item--active, .dropdown__language--active) {
+.navbar__list a:hover:not(.navbar__item--active, .navbar__dropdown-item--active) {
   background-color: #c2a775;
 }
 .navbar__item--active {
@@ -340,56 +311,67 @@ header {
     border: none;
     display: flex;
     justify-content: space-evenly;
+    animation-name: none;
   }
   .navbar__list > li > a:hover:not(.navbar__item--active) {
     background-color: #000000;
     color: #c2a775;
   }
 }
-
-/* Dropdown content of the navbar */
-.dropdown__button {
+.navbar__dropdown-button {
   width: 100%;
   text-align: left;
   cursor: pointer;
   padding: 0.6em 0.4em;
 }
-.dropdown__button:hover {
+.navbar__dropdown-button:hover {
   background-color: #c2a775;
 }
-.dropdown__button i {
+.navbar__dropdown-button i {
   font-size: 0.52em;
   position: relative;
   bottom: 2px;
   margin-left: 0.1em;
 }
-.dropdown__content {
+.navbar__dropdown-items {
   display: none;
   background-color: #000000;
   min-width: 160px;
   z-index: 1;
   border: solid 2px #c2a775;
+  /* Animation */
+  animation-name: open-menu;
+  animation-duration: 0.3s;
+  transform-origin: top;
 }
-.dropdown__content a {
+.navbar__dropdown-items a {
   padding-left: 0.8em;
 }
-.dropdown .dropdown__content .dropdown__language--active {
+.navbar__dropdown .navbar__dropdown-items .navbar__dropdown-item--active {
   color: #c2a775;
   background-color: #000000;
 }
 @media screen and (min-width: 37.5em) {
-  .dropdown__button:hover {
+  .navbar__dropdown-button:hover {
     background-color: #000000;
     color: #c2a775;
   }
-  .dropdown__content {
+  .navbar__dropdown-items {
     position: absolute;
     top: 65px;
     min-width: 120px;
   }
 }
 
-/* Footer */
+/* Animation keyframes for opening the menu */
+@keyframes open-menu {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 /* Follow section */
 .follow div {
   margin: 1em 0.5em 0;
@@ -449,7 +431,35 @@ header {
   }
 }
 
+/* Introduction Sections for all pages */
+.introduction {
+  padding-top: 0;
+}
+.introduction--padding {
+  padding-top: 1.5em;
+}
+
+/* Grid image + text sections */
+@media screen and (min-width: 48em) {
+  .grid-display, .era article, .author, .news article {
+    max-width: 900px;
+    margin: 0 auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .grid-display a, .era article a, .author a, .news article a, .grid-display img, .era article img, .author img, .news article img {
+    margin-top: 0;
+    grid-row: 1/3;
+    grid-column: 1/2;
+  }
+  .grid-display--reverse a, .era .era__second a, .era .era__dawn a, .news .news__character a {
+    grid-column: 2/3;
+  }
+}
+
 /* Pages */
+/* Introductory Section */
 /* Explore Section */
 @media screen and (min-width: 48em) {
   .explore__articles {
@@ -473,6 +483,7 @@ header {
   }
 }
 
+/* Author Section */
 /* Get in Touch Section */
 /* Form */
 @media screen and (min-width: 48em) {
@@ -494,29 +505,27 @@ header {
   }
 }
 
-/* ---------- Timeline Page ---------- */
 /* Era Section */
 .era article {
   padding-bottom: 1.5em;
 }
-.era__dawn {
+.era .era__dawn {
   padding-top: 0;
 }
-.era__first .image img {
-  transform: translate(0, -10%);
+.era__first a img {
+  translate: 0 -10%;
 }
-.era__second .image img {
-  transform: translate(0, -10%);
+.era .era__second a img {
+  translate: 0 -10%;
 }
-.era .era__third--padding {
+.era .era__third {
   padding-bottom: 0;
 }
-.era__third .image img {
+.era .era__third a img {
   transform: scale(1.5);
   object-position: 20px;
 }
 
-/* ---------- Map Page ---------- */
 /* Map Section */
 .map {
   width: 90%;
@@ -531,19 +540,18 @@ header {
 }
 
 /* Places Section */
-.places__place-2 a img {
+.places .places__place-2 a img {
   object-position: 0 -20px;
 }
 
-/* ---------- Races Page ---------- */
 /* Races Section */
 .races > div {
   padding: 1.5em 0;
 }
-.races > div > h3 {
+.races > div h3 {
   padding-bottom: 1em;
 }
-.races > div > div > h4 {
+.races > div h4 {
   padding-bottom: 0.7em;
 }
 .races .races__1st {
@@ -571,26 +579,25 @@ header {
   object-position: 0 -15px;
 }
 
-/* ---------- Characters Page ---------- */
 /* Organization Section */
-.organizations__organization-1 a img {
+.organizations__gallery .organizations__organization-1 a img {
   object-position: 0 -25px;
 }
-.organizations__organization-2 a img {
+.organizations__gallery .organizations__organization-2 a img {
   object-position: 0 -130px;
 }
-.organizations__organization-4 a img {
+.organizations__gallery .organizations__organization-4 a img {
   object-position: -50px -50px;
 }
 
 /* Artifact Section */
-.artifacts__artifact-1 a img {
+.artifacts__gallery .artifacts__artifact-1 a img {
   object-position: 0 -25px;
 }
-.artifacts__artifact-3 a img {
+.artifacts__gallery .artifacts__artifact-3 a img {
   object-position: 0 -150px;
 }
-.artifacts__artifact-7 a img {
+.artifacts__gallery .artifacts__artifact-7 a img {
   object-position: 0 -50px;
 }
 

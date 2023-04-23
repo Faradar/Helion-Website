@@ -11,6 +11,7 @@ body {
 	background-color: $background-color;
 	color: $text-color;
 	font-size: 1.4rem;
+	line-height: 1.4em;
 }
 
 hr {
@@ -54,35 +55,10 @@ p {
 	margin: 0.5em auto 0;
 }
 
-/* Introduction Section */
-.introduction {
-	padding-top: 0;
+header {
+	background-color: $background-color;
+	position: sticky;
+	top: 0;
 
-	&--padding {
-		padding-top: 1.5em;
-	}
-}
-
-/* Grid image + text sections */
-.grid-display {
-
-	@include tablet() {
-		max-width: 900px;
-		margin: 0 auto 0;
-
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-
-		a, img {
-			margin-top: 0;
-
-			grid-row: 1 / 3;
-			grid-column: 1 / 2;
-		}
-
-		&--reverse a {
-			grid-column: 2 / 3;
-		}
-	}
+	z-index: 10;
 }

@@ -1,3 +1,6 @@
+/* Introductory Section */
+
+
 /* Explore Section */
 .explore {
 
@@ -20,10 +23,31 @@
 /* News Section */
 .news {
 
+	article {
+		@extend .grid-display;
+
+		a {
+			@extend .image;
+		}
+	}
+
+	.news__character {
+		@extend .grid-display--reverse;
+	}
+
 	@include tablet() {
 		&__destination {
 			margin-top: 2em;
 		}
+	}
+}
+
+/* Author Section */
+.author {
+	@extend .grid-display;
+
+	img {
+		@extend .image;
 	}
 }
 

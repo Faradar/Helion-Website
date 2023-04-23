@@ -1,33 +1,65 @@
-/* ---------- Characters Page ---------- */
-
 /* Organization Section */
-.organizations__organization {
+.organizations {
 
-    &-1 a img {
-        object-position: 0 -25px;
-    }
+    &__gallery {
+        @extend .gallery;
 
-    &-2 a img {
-        object-position: 0 -130px;
-    }
+        > div {
+            @extend .image;
 
-    &-4 a img {
-        object-position: -50px -50px;
+            img {
+                @extend .image__item--aspect-ratio;
+            }
+        }
+
+        .organizations__organization {
+
+            &-1 {
+                @extend .image--margin--top;
+
+                a img {
+                    object-position: 0 -25px;
+                }
+            }
+
+            &-2 a img {
+                object-position: 0 -130px;
+            }
+
+            &-4 a img {
+                object-position: -50px -50px;
+            }
+        }
     }
 }
 
 /* Artifact Section */
-.artifacts__artifact {
+.artifacts {
 
-    &-1 a img{
-        object-position: 0 -25px;
-    }
+    &__gallery {
+        @extend .gallery;
 
-    &-3 a img {
-        object-position: 0 -150px;
-    }
+        > div {
+            @extend .image;
+        }
 
-    &-7 a img {
-        object-position: 0 -50px;
+        .artifacts__artifact {
+
+            &-1 {
+                @extend .image--margin--top;
+
+                a img {
+                    object-position: 0 -25px;
+                }
+            }
+
+            &-3 a img {
+                object-position: 0 -150px;
+            }
+
+            &-7 a img {
+                object-position: 0 -50px;
+            }
+        }
     }
 }

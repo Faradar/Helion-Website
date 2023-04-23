@@ -1,4 +1,3 @@
-/* Images */
 .image {
 	width: 90%;
 	aspect-ratio: 1;
@@ -19,24 +18,5 @@
 
 	@include mobile-lg() {
 		flex-basis: 50%;
-	}
-}
-
-.gallery {
-
-	@include mobile-lg() {
-		max-width: 985px;
-		margin: 0 auto;
-		padding: 0 1em;
-
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: flex-end;
-		gap: 1em;
-	}
-
-	@include desktop-lg() {
-		max-width: 1585px;
 	}
 }
