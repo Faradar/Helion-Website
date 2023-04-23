@@ -1,3 +1,33 @@
+/* Updates Section */
+.newsletter {
+
+	&__form {
+		@extend .form;
+	}
+
+	&__checkbox {
+		@extend .form__checkbox;
+
+		&-label {
+			@extend .form__checkbox-label;
+		}
+	}
+
+	&__submit {
+		@extend .form__submit;
+	}
+
+	@include tablet() {
+		&__form > div:first-child {
+			width: clamp(10px, 95%, 1000px);
+			margin: 0 auto;
+
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+}
+
 /* Follow section */
 .follow {
 
@@ -57,20 +87,6 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-evenly;
-		}
-	}
-}
-
-/* Updates Section */
-.newsletter {
-
-	@include tablet() {
-		&__form > div:first-child {
-			width: clamp(10px, 95%, 1000px);
-			margin: 0 auto;
-
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
 }

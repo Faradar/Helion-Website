@@ -217,14 +217,14 @@ header {
   line-height: 1em;
 }
 
-.form {
+.form, .contact__form, .newsletter__form {
   text-align: left;
 }
-.form label {
+.form label, .contact__form label, .newsletter__form label {
   width: clamp(10px, 90%, 300px);
   margin: 0 auto 0.5em;
 }
-.form input, .form__textarea {
+.form input, .contact__form input, .newsletter__form input, .form__textarea, .contact__textarea {
   width: clamp(10px, 90%, 300px);
   margin: 0 auto 1em;
   border: solid 1px #666;
@@ -233,28 +233,28 @@ header {
   color: #000000;
   padding: 0.3em;
 }
-.form .form__verification * {
+.form .form__verification *, .form .contact__verification *, .contact__form .form__verification *, .contact__form .contact__verification *, .newsletter__form .form__verification *, .newsletter__form .contact__verification * {
   text-align: center;
 }
-.form .form__verification .form__math {
+.form .form__verification .form__math, .form .form__verification .contact__math, .form .contact__verification .form__math, .form .contact__verification .contact__math, .contact__form .form__verification .form__math, .contact__form .form__verification .contact__math, .contact__form .contact__verification .form__math, .contact__form .contact__verification .contact__math, .newsletter__form .form__verification .form__math, .newsletter__form .form__verification .contact__math, .newsletter__form .contact__verification .form__math, .newsletter__form .contact__verification .contact__math {
   width: 150px;
 }
-.form .form__submit {
+.form .form__submit, .form .contact__submit, .contact__form .form__submit, .contact__form .contact__submit, .form .newsletter__submit, .contact__form .newsletter__submit, .newsletter__form .form__submit, .newsletter__form .contact__submit, .newsletter__form .newsletter__submit {
   cursor: pointer;
   margin: 2em auto 0;
   width: 100px;
   background-color: #877859;
   color: #000000;
 }
-.form .form__submit:hover {
+.form .form__submit:hover, .form .contact__submit:hover, .contact__form .form__submit:hover, .contact__form .contact__submit:hover, .form .newsletter__submit:hover, .contact__form .newsletter__submit:hover, .newsletter__form .form__submit:hover, .newsletter__form .contact__submit:hover, .newsletter__form .newsletter__submit:hover {
   background-color: #feab42;
   transition: background-color 1s;
 }
-.form .form__checkbox-label {
+.form .form__checkbox-label, .contact__form .form__checkbox-label, .form .newsletter__checkbox-label, .contact__form .newsletter__checkbox-label, .newsletter__form .form__checkbox-label, .newsletter__form .newsletter__checkbox-label {
   text-align: center;
   margin-bottom: 1em;
 }
-.form .form__checkbox {
+.form .form__checkbox, .contact__form .form__checkbox, .form .newsletter__checkbox, .contact__form .newsletter__checkbox, .newsletter__form .form__checkbox, .newsletter__form .newsletter__checkbox {
   width: 1em;
   height: 1em;
   margin: 0 auto;
@@ -372,6 +372,16 @@ header {
     transform: scaleY(1);
   }
 }
+/* Updates Section */
+@media screen and (min-width: 48em) {
+  .newsletter__form > div:first-child {
+    width: clamp(10px, 95%, 1000px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* Follow section */
 .follow div {
   margin: 1em 0.5em 0;
@@ -418,16 +428,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-  }
-}
-
-/* Updates Section */
-@media screen and (min-width: 48em) {
-  .newsletter__form > div:first-child {
-    width: clamp(10px, 95%, 1000px);
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

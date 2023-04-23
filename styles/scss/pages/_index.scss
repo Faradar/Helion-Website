@@ -1,6 +1,5 @@
 /* Introductory Section */
 
-
 /* Explore Section */
 .explore {
 
@@ -55,6 +54,26 @@
 
 /* Form */
 .contact {
+
+	&__form {
+		@extend .form;
+	}
+
+	&__textarea {
+		@extend .form__textarea;
+	}
+
+	&__verification {
+		@extend .form__verification;
+	}
+
+	&__math {
+		@extend .form__math;
+	}
+
+	&__submit {
+		@extend .form__submit;
+	}
 
 	@include tablet() {
 		&__form > div:first-child {
