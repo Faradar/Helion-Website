@@ -2,12 +2,11 @@
 .grid-display {
 
 	@include tablet() {
-		max-width: 900px;
+		max-width: 1200px;
 		margin: 0 auto 0;
 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
 
 		a, img {
 			margin-top: 0;
