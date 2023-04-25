@@ -308,13 +308,7 @@ header {
   transition: max-height 0.3s, transform 0.3s;
   transform-origin: top;
 }
-.navbar__item--active {
-  color: #c2a775;
-}
 @media screen and (min-width: 37.5em) {
-  .navbar__menu {
-    display: none;
-  }
   .navbar__list, .navbar__list--visible {
     border: none;
     display: flex;
@@ -328,6 +322,14 @@ header {
     transition: max-height 0s, transform 0s;
   }
 }
+.navbar__item--active {
+  color: #c2a775;
+}
+@media screen and (min-width: 37.5em) {
+  .navbar__menu {
+    display: none;
+  }
+}
 .navbar__dropdown-button {
   width: 100%;
   text-align: left;
@@ -336,6 +338,12 @@ header {
 }
 .navbar__dropdown-button:hover {
   background-color: #c2a775;
+}
+@media screen and (min-width: 37.5em) {
+  .navbar__dropdown-button:hover {
+    background-color: #000000;
+    color: #c2a775;
+  }
 }
 .navbar__dropdown-button i {
   font-size: 0.52em;
@@ -364,20 +372,16 @@ header {
   transition: max-height 0.3s, transform 0.3s;
   transform-origin: top;
 }
-.navbar__dropdown .navbar__dropdown-items .navbar__dropdown-item--active, .navbar__dropdown .navbar__dropdown-items--visible .navbar__dropdown-item--active {
-  color: #c2a775;
-  background-color: #000000;
-}
 @media screen and (min-width: 37.5em) {
-  .navbar__dropdown-button:hover {
-    background-color: #000000;
-    color: #c2a775;
-  }
   .navbar__dropdown-items, .navbar__dropdown-items--visible {
     position: absolute;
     top: 2.8em;
     min-width: 120px;
   }
+}
+.navbar__dropdown .navbar__dropdown-items .navbar__dropdown-item--active, .navbar__dropdown .navbar__dropdown-items--visible .navbar__dropdown-item--active {
+  color: #c2a775;
+  background-color: #000000;
 }
 
 /* Updates Section */
@@ -389,7 +393,6 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
 /* Follow section */
 .follow div {
   margin: 1em 0.5em 0;
@@ -500,6 +503,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
+@media screen and (min-width: 48em) {
   .contact__message {
     max-width: 650px;
     margin: 0 auto;

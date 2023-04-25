@@ -57,6 +57,16 @@
 
 	&__form {
 		@extend .form;
+
+		@include tablet() {
+			> div:first-child {
+				max-width: 700px;
+				margin: 0 auto;
+
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+		}
 	}
 
 	&__textarea {
@@ -76,14 +86,6 @@
 	}
 
 	@include tablet() {
-		&__form > div:first-child {
-			max-width: 700px;
-			margin: 0 auto;
-
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-		}
-
 		&__message {
 			max-width: 650px;
 			margin: 0 auto;

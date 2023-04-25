@@ -28,18 +28,8 @@
 
             @include Aninav();
         }
-    }
 
-    &__item--active {
-        color: $highlight-color;
-    }
-
-    @include mobile-lg() {
-        &__menu {
-            display: none;
-        }
-
-        &__list {
+        @include mobile-lg() {
             border: none;
 
             display: flex;
@@ -56,6 +46,17 @@
         }
     }
 
+    &__item--active {
+        color: $highlight-color;
+    }
+
+    &__menu {
+
+        @include mobile-lg() {
+            display: none;
+        }
+    }
+
     /* Dropdown content of the navbar */
     &__dropdown {
 
@@ -67,6 +68,11 @@
 
             &:hover {
                 background-color: $highlight-color;
+
+                @include mobile-lg() {
+                    background-color: $background-color;
+                    color: $highlight-color;
+                }
             }
 
             i {
@@ -94,24 +100,17 @@
 
                 @include Aninav();
             }
+
+            @include mobile-lg() {
+                position: absolute;
+                top: 2.8em;
+                min-width: 120px;
+            }
         }
 
         .navbar__dropdown-items .navbar__dropdown-item--active {
             color: $highlight-color;
             background-color: $background-color;
-        }
-
-        @include mobile-lg() {
-            &-button:hover {
-                background-color: $background-color;
-                color: $highlight-color;
-            }
-
-            &-items {
-                position: absolute;
-                top: 2.8em;
-                min-width: 120px;
-            }
         }
     }
 }
