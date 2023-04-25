@@ -1,3 +1,12 @@
+/* Navbar animations */
+@mixin Aninav($scale: 1, $height: none, $overflow: visible, $numH: .3s, $numT: .3s) {
+	transform: scaleY($scale);
+	max-height: $height;
+	overflow: $overflow;
+	transition: max-height $numH,transform $numT;
+	transform-origin: top;
+}
+
 /* ---------- Media Queries ---------- */
 
 /* 600px */

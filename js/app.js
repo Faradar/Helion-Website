@@ -7,6 +7,13 @@ const backCol = "#000000"; /* Background color variable from scss */
 const highCol = "#c2a775"; /* Highlight color variable from scss */
 const textCol = "#ffffff"; /* Text color variable from scss */
 
+/* Sets the proper class on startup based on screen width */
+if (mql.matches) {
+    navList.className = "navbar__list--visible";
+} else {
+    navList.className = "navbar__list";
+}
+
 /* Changes the background color of the button on mouse behaviour */
 function mouseBtnBack(a, b) {
     navBtn.onmouseover = () => {
@@ -35,7 +42,12 @@ mql.onchange = (e) => {
         /* The viewport is more than 600 pixels wide */
         navList.style.display = "flex";
         navIcon.className = "fa fa-bars";
-        navLang.style.display = "none";
+        navList.className = "navbar__list--visible";
+        navLang.className = "navbar__dropdown-items";
+        navLang.style.transition = "max-height 0s,transform 0s";
+        setTimeout(() => {
+            navLang.style.transition = "max-height .5s, transform .3s";
+        }, 1);
         navBtn.style.backgroundColor = backCol;
         navBtn.style.color = textCol;
 
@@ -44,7 +56,11 @@ mql.onchange = (e) => {
     } else {
         /* The viewport is 600 pixels wide or less */
         navList.style.display = "none";
-        navLang.style.display = "none";
+        setTimeout(() => {
+            navList.style.display = "block";
+        }, 1);
+        navList.className = "navbar__list";
+        navLang.className = "navbar__dropdown-items";
         navBtn.style.backgroundColor = backCol;
         navBtn.style.color = textCol;
 
@@ -55,20 +71,23 @@ mql.onchange = (e) => {
 /* Display the navbar on click */
 /* Changes the icon on click */
 function openMenu() {
-    if (navList.style.display === "block") {
-        navList.style.display = "none";
+    if (navList.className === "navbar__list--visible") {
+        navList.className = "navbar__list";
         navIcon.className = "fa fa-bars";
+        navLang.className = "navbar__dropdown-items";
+        navBtn.style.backgroundColor = backCol;
     } else {
-        navList.style.display = "block";
+        navList.className = "navbar__list--visible";
         navIcon.className = "fa fa-times";
+        mouseBtnBack(highCol, backCol);
     }
 }
 
 /* Display the dropdown on click */
-/* Changes the styles of the dropdown button on click depending on width */
+/* Changes the styles of the dropdown button on click depending on screen width */
 function openDropdown() {
-    if (navLang.style.display === "block") {
-        navLang.style.display = "none";
+    if (navLang.className === "navbar__dropdown-items--visible") {
+        navLang.className = "navbar__dropdown-items";
 
         if (!mql.matches) {
             navBtn.style.backgroundColor = highCol;
@@ -83,11 +102,10 @@ function openDropdown() {
         }
 
     } else {
-        navLang.style.display = "block";
+        navLang.className = "navbar__dropdown-items--visible";
 
         if (!mql.matches) {
             mouseBtnBack(highCol, highCol);
-
         } else {
             navBtn.style.color = highCol;
 
