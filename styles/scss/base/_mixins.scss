@@ -1,5 +1,12 @@
+/* Hide Content */
+@mixin hide {
+	position: absolute;
+	transform: scaleY(0);
+	z-index: -1;
+}
+
 /* Navbar animations */
-@mixin Aninav($scale: 1, $height: none, $overflow: visible, $numH: .3s, $numT: .3s) {
+@mixin aninav($scale: 1, $height: none, $overflow: visible, $numH: .3s, $numT: .3s) {
 	transform: scaleY($scale);
 	max-height: $height;
 	overflow: $overflow;

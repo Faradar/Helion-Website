@@ -13,7 +13,7 @@
     }
 
     &__list {
-        @include Aninav(0, 0, hidden, .8s, .4s);
+        @include aninav(0, 0, hidden, .8s, .4s);
 
         width: 100%;
         border: solid 2px $highlight-color;
@@ -26,10 +26,10 @@
         &--visible {
             @extend .navbar__list;
 
-            @include Aninav();
+            @include aninav;
         }
 
-        @include mobile-lg() {
+        @include mobile-lg {
             border: none;
 
             display: flex;
@@ -52,7 +52,7 @@
 
     &__menu {
 
-        @include mobile-lg() {
+        @include mobile-lg {
             display: none;
         }
     }
@@ -69,7 +69,7 @@
             &:hover {
                 background-color: $highlight-color;
 
-                @include mobile-lg() {
+                @include mobile-lg {
                     background-color: $background-color;
                     color: $highlight-color;
                 }
@@ -84,7 +84,7 @@
         }
 
         &-items {
-            @include Aninav(0, 0, hidden, .5s, .3s);
+            @include aninav(0, 0, hidden, .5s, .3s);
 
             background-color: $background-color;
             min-width: 160px;
@@ -98,10 +98,10 @@
             &--visible {
                 @extend .navbar__dropdown-items;
 
-                @include Aninav();
+                @include aninav;
             }
 
-            @include mobile-lg() {
+            @include mobile-lg {
                 position: absolute;
                 top: 2.8em;
                 min-width: 120px;

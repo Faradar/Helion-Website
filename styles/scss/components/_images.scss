@@ -16,7 +16,7 @@
         object-fit: cover;
     }
 
-	@include mobile-lg() {
+	@include mobile-lg {
 		flex-basis: 50%;
 	}
 }

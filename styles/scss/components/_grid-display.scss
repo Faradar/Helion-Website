@@ -1,7 +1,7 @@
 /* Grid image + text sections */
 .grid-display {
 
-	@include tablet() {
+	@include tablet {
 		max-width: 1200px;
 		margin: 0 auto 0;
 

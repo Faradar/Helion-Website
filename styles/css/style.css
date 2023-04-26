@@ -99,6 +99,7 @@ body {
 
 /* Colors */
 /* Typography */
+/* Hide Content */
 /* Navbar animations */
 /* ---------- Media Queries ---------- */
 /* 600px */
@@ -466,6 +467,12 @@ header {
   .grid-display--reverse a, .era .era__second a, .era .era__dawn a, .news .news__character a {
     grid-column: 2/3;
   }
+}
+
+.title--hidden {
+  position: absolute;
+  transform: scaleY(0);
+  z-index: -1;
 }
 
 /* Pages */

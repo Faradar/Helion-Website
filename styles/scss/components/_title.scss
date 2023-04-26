@@ -1,0 +1,6 @@
+.title {
+
+    &--hidden {
+        @include hide;
+    }
+}
