@@ -6,10 +6,18 @@
 }
 
 /* Navbar animations */
-@mixin aninav($scale: 1, $height: none, $overflow: visible, $numH: .3s, $numT: .3s) {
-	transform: scaleY($scale);
-	max-height: $height;
-	overflow: $overflow;
+@mixin open-anim($numH: 2s, $numHD: 0s, $numT: .8s, $numTD: .3s) {
+	transform: scaleY(1);
+	max-height: 1000px;
+	overflow: visible;
+	transition: max-height $numH $numHD,transform $numT $numTD;
+	transform-origin: top;
+}
+
+@mixin close-anim($numH: 1s, $numT: .8s) {
+	transform: scaleY(0);
+	max-height: 0;
+	overflow: hidden;
 	transition: max-height $numH,transform $numT;
 	transform-origin: top;
 }

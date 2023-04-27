@@ -13,7 +13,7 @@
     }
 
     &__list {
-        @include aninav(0, 0, hidden, .8s, .4s);
+        @include close-anim;
 
         width: 100%;
         border: solid 2px $highlight-color;
@@ -26,7 +26,7 @@
         &--visible {
             @extend .navbar__list;
 
-            @include aninav;
+            @include open-anim;
         }
 
         @include mobile-lg {
@@ -84,7 +84,7 @@
         }
 
         &-items {
-            @include aninav(0, 0, hidden, .5s, .3s);
+            @include close-anim(.7s, .6s);
 
             background-color: $background-color;
             min-width: 160px;
@@ -98,13 +98,17 @@
             &--visible {
                 @extend .navbar__dropdown-items;
 
-                @include aninav;
+                @include open-anim(2s, 0s, 1s, .2s);
             }
 
             @include mobile-lg {
                 position: absolute;
                 top: 2.8em;
                 min-width: 120px;
+
+                &--visible {
+                    transition: transform .8s;
+                }
             }
         }
 
