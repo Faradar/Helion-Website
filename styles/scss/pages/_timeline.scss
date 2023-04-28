@@ -4,7 +4,7 @@
     article {
         padding-bottom: 1.5em;
 
-        @extend .grid-display;
+        @extend .float-display;
 
         a {
             @extend .image;
@@ -14,7 +14,7 @@
     .era__dawn {
         padding-top: 0;
 
-        @extend .grid-display--reverse;
+        @extend .float-display--reverse;
 
         a img {
             @extend .image__item--aspect-ratio;
@@ -26,7 +26,7 @@
     }
 
     .era__second {
-        @extend .grid-display--reverse;
+        @extend .float-display--reverse;
 
         a img {
             translate: 0 -10%;

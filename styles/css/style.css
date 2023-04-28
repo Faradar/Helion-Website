@@ -456,19 +456,35 @@ header {
 
 /* Grid image + text sections */
 @media screen and (min-width: 48em) {
-  .grid-display, .era article, .author, .news article {
+  .grid-display, .author, .news article {
     max-width: 1200px;
     margin: 0 auto 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .grid-display a, .era article a, .author a, .news article a, .grid-display img, .era article img, .author img, .news article img {
+  .grid-display a, .author a, .news article a, .grid-display img, .author img, .news article img {
     margin-top: 0;
     grid-row: 1/3;
     grid-column: 1/2;
   }
-  .grid-display--reverse a, .era .era__second a, .era .era__dawn a, .news .news__character a {
+  .grid-display--reverse a, .news .news__character a {
     grid-column: 2/3;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .float-display, .era article {
+    max-width: 800px;
+    margin: 0 auto 0;
+    display: flow-root;
+  }
+  .float-display a, .era article a {
+    float: left;
+    margin: 1em 0.1em 0.1em 4em;
+  }
+  .float-display--reverse a, .era .era__second a, .era .era__dawn a {
+    float: right;
+    margin: 1em 4em 0.1em 0.1em;
   }
 }
 
