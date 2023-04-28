@@ -179,7 +179,7 @@ header {
   object-fit: cover;
   overflow: hidden;
 }
-.image--margin--top, .artifacts__gallery .artifacts__artifact-1, .organizations__gallery .organizations__organization-1, .places .places__place-1 {
+.image--margin--top, .artifacts__gallery .artifacts__ring, .organizations__gallery .organizations__council, .places .places__arnoras {
   margin-top: 1.5em;
 }
 .image__item--aspect-ratio, .organizations__gallery > div img, .races__gallery > div img, .places__gallery > div img, .era .era__third a img, .era .era__dawn a img {
@@ -578,8 +578,11 @@ header {
 }
 
 /* Places Section */
-.places .places__place-2 a img {
+.places .places__skyhold a img {
   object-position: 0 -20px;
+}
+.places .places__order-dragon a img {
+  object-position: 50% -80px;
 }
 
 /* Races Section */
@@ -598,44 +601,50 @@ header {
 .races .races__5th {
   padding-bottom: 0;
 }
-.races__race-4 a img {
+.races__fusgra a img {
   object-position: 0 -20px;
 }
-.races__race-9 a img {
+.races__aligerum-good a img {
   object-position: left;
 }
-.races__race-11 a img {
+.races__aligerum-neutral a img {
   object-position: 0 -30px;
 }
-.races__race-12 a img {
+.races__draconis a img {
   object-position: top;
 }
-.races__race-18 a img {
+.races__gods a img {
   object-position: -100px -50px;
 }
-.races__race-20 a img {
+.races__numenoreans a img {
   object-position: 0 -15px;
 }
 
 /* Organization Section */
-.organizations__gallery .organizations__organization-1 a img {
+.organizations__gallery .organizations__council a img {
   object-position: 0 -25px;
 }
-.organizations__gallery .organizations__organization-2 a img {
+.organizations__gallery .organizations__knights a img {
   object-position: 0 -130px;
 }
-.organizations__gallery .organizations__organization-4 a img {
+.organizations__gallery .organizations__phoenix a img {
+  object-position: -100px -50px;
+}
+.organizations__gallery .organizations__arcanum a img {
   object-position: -50px -50px;
+}
+.organizations__gallery .organizations__adventurers a img {
+  object-position: 0 -160px;
 }
 
 /* Artifact Section */
-.artifacts__gallery .artifacts__artifact-1 a img {
+.artifacts__gallery .artifacts__ring a img {
   object-position: 0 -25px;
 }
-.artifacts__gallery .artifacts__artifact-3 a img {
+.artifacts__gallery .artifacts__melledril a img {
   object-position: 0 -150px;
 }
-.artifacts__gallery .artifacts__artifact-7 a img {
+.artifacts__gallery .artifacts__palantir a img {
   object-position: 0 -50px;
 }
 

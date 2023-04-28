@@ -28,14 +28,18 @@
         }
     }
 
-    .places__place {
+    .places__ {
 
-        &-1 {
+        &arnoras {
             @extend .image--margin--top;
         }
 
-        &-2 a img {
+        &skyhold a img {
             object-position: 0 -20px;
+        }
+
+        &order-dragon a img {
+            object-position: 50% -80px;
         }
     }
 }

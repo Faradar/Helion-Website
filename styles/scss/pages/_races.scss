@@ -33,30 +33,27 @@
         padding-bottom: 0;
     }
 
-    &__race {
+    &__fusgra a img {
+        object-position: 0 -20px;
+    }
 
-        &-4 a img {
-            object-position: 0 -20px;
-        }
+    &__aligerum-good a img {
+        object-position: left;
+    }
 
-        &-9 a img {
-            object-position: left;
-        }
+    &__aligerum-neutral a img {
+        object-position: 0 -30px;
+    }
 
-        &-11 a img {
-            object-position: 0 -30px;
-        }
+    &__draconis a img {
+        object-position: top;
+    }
 
-        &-12 a img {
-            object-position: top;
-        }
+    &__gods a img {
+        object-position: -100px -50px;
+    }
 
-        &-18 a img {
-            object-position: -100px -50px;
-        }
-
-        &-20 a img {
-            object-position: 0 -15px;
-        }
+    &__numenoreans a img {
+        object-position: 0 -15px;
     }
 }

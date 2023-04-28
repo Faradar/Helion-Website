@@ -12,9 +12,9 @@
             }
         }
 
-        .organizations__organization {
+        .organizations__ {
 
-            &-1 {
+            &council {
                 @extend .image--margin--top;
 
                 a img {
@@ -22,12 +22,20 @@
                 }
             }
 
-            &-2 a img {
+            &knights a img {
                 object-position: 0 -130px;
             }
 
-            &-4 a img {
+            &phoenix a img {
+                object-position: -100px -50px;
+            }
+
+            &arcanum a img {
                 object-position: -50px -50px;
+            }
+
+            &adventurers a img {
+                object-position: 0 -160px;
             }
         }
     }
@@ -43,9 +51,9 @@
             @extend .image;
         }
 
-        .artifacts__artifact {
+        .artifacts__ {
 
-            &-1 {
+            &ring {
                 @extend .image--margin--top;
 
                 a img {
@@ -53,11 +61,11 @@
                 }
             }
 
-            &-3 a img {
+            &melledril a img {
                 object-position: 0 -150px;
             }
 
-            &-7 a img {
+            &palantir a img {
                 object-position: 0 -50px;
             }
         }
