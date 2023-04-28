@@ -84,7 +84,7 @@
         }
 
         &-items {
-            @include close-anim(.7s, .6s);
+            @include close-anim(1s, .8s);
 
             background-color: $background-color;
             min-width: 160px;
@@ -98,17 +98,13 @@
             &--visible {
                 @extend .navbar__dropdown-items;
 
-                @include open-anim(2s, 0s, 1s, .2s);
+                @include open-anim(1s, 0s, .8s, 0s);
             }
 
             @include mobile-lg {
                 position: absolute;
                 top: 2.8em;
                 min-width: 120px;
-
-                &--visible {
-                    transition: transform .8s;
-                }
             }
         }
 

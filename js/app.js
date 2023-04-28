@@ -2,8 +2,6 @@ const mql = window.matchMedia("(min-width: 37.5em)");
 const navList = document.getElementById("nav-list");
 const navIcon = document.getElementById("nav-icon");
 const navLang = document.getElementById("nav-lang");
-/* const langClose = document.getElementsByClassName("navbar__dropdown-items"); */
-/* const langOpen = document. getElementsByClassName("navbar__dropdown-items--visible") */
 const navBtn = document.getElementById("nav-btn");
 const backCol = "#000000"; /* Background color variable from scss */
 const highCol = "#c2a775"; /* Highlight color variable from scss */
@@ -46,9 +44,9 @@ mql.onchange = (e) => {
         navIcon.className = "fa fa-bars";
         navList.className = "navbar__list--visible";
         navLang.className = "navbar__dropdown-items";
-        langClose.style.transition = "max-height 0s,transform 0s";
+        navLang.style.transition = "max-height 0s,transform 0s";
         setTimeout(() => {
-            langClose.style.transition = "max-height .7s, transform .6s";
+            navLang.style.transition = "max-height 1s, transform .8s";
         }, 1);
         navBtn.style.backgroundColor = backCol;
         navBtn.style.color = textCol;
@@ -63,7 +61,6 @@ mql.onchange = (e) => {
         }, 1);
         navList.className = "navbar__list";
         navLang.className = "navbar__dropdown-items";
-        langClose.style.transition = "max-height 2s 0s, transform 1s .2s";
         navBtn.style.backgroundColor = backCol;
         navBtn.style.color = textCol;
 
