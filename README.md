@@ -1,7 +1,7 @@
 # Medieval Fantasy Setting Website - Helion
 > Responsive website designed as the main project of the [Coderhouse web development course](https://www.coderhouse.com/online/desarrollo-web-online). What's mainly put in practice here is HTML and CSS (with a little personally added JS).
 
-> Live demo [_here_](https://faradar.github.io/PreEntrega2-Echeveste-Arteaga/).
+> Live demo [_here_](https://faradar.github.io/PreEntrega3-Echeveste-Arteaga/).
 
 
 ## Table of Contents
@@ -28,12 +28,14 @@ Project is created with:
 - CSS3
 - Font Awesome - version 4.7.0
 - JavaScript - ES6
+- SASS - version 1.62.0
 
 
 ## Features
 - Fully Responsive
-- BEM usage
+- BEM
 - Lightweight
+- SEO
 
 
 ## Project Status
@@ -46,8 +48,8 @@ Room for improvement:
 - The races and character pages are rather similar to each other and lack a distinguishing feature.
 
 To do:
-- Incorporate some animations.
-- Incorporate SASS.
+- Incorporate more SEO practices
+- Make the code more efficient.
 
 
 ## Acknowledgements
