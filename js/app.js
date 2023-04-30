@@ -3,6 +3,7 @@ const navList = document.getElementById("nav-list");
 const navIcon = document.getElementById("nav-icon");
 const navLang = document.getElementById("nav-lang");
 const navBtn = document.getElementById("nav-btn");
+const navMenu = document.getElementById("nav-menu");
 const backCol = "#000000"; /* Background color variable from scss */
 const highCol = "#c2a775"; /* Highlight color variable from scss */
 const textCol = "#ffffff"; /* Text color variable from scss */
@@ -50,6 +51,9 @@ mql.onchange = (e) => {
         }, 1);
         navBtn.style.backgroundColor = backCol;
         navBtn.style.color = textCol;
+        navMenu.ariaExpanded = "false";
+        navList.ariaHidden = "false";
+        navBtn.ariaExpanded = "false";
 
         mouseBtnCol(highCol, textCol);
 
@@ -63,6 +67,8 @@ mql.onchange = (e) => {
         navLang.className = "navbar__dropdown-items";
         navBtn.style.backgroundColor = backCol;
         navBtn.style.color = textCol;
+        navList.ariaHidden = "true";
+        navBtn.ariaExpanded = "false";
 
         mouseBtnBack(highCol, backCol);
     }
@@ -75,10 +81,14 @@ function openMenu() {
         navList.className = "navbar__list";
         navIcon.className = "fa fa-bars";
         navLang.className = "navbar__dropdown-items";
+        navMenu.ariaExpanded = "false";
+        navList.ariaHidden = "true";
         navBtn.style.backgroundColor = backCol;
     } else {
         navList.className = "navbar__list--visible";
         navIcon.className = "fa fa-times";
+        navMenu.ariaExpanded = "true";
+        navList.ariaHidden = "false";
         mouseBtnBack(highCol, backCol);
     }
 }
@@ -88,6 +98,7 @@ function openMenu() {
 function openDropdown() {
     if (navLang.className === "navbar__dropdown-items--visible") {
         navLang.className = "navbar__dropdown-items";
+        navBtn.ariaExpanded = "false";
 
         if (!mql.matches) {
             navBtn.style.backgroundColor = highCol;
@@ -103,6 +114,7 @@ function openDropdown() {
 
     } else {
         navLang.className = "navbar__dropdown-items--visible";
+        navBtn.ariaExpanded = "true";
 
         if (!mql.matches) {
             mouseBtnBack(highCol, highCol);
