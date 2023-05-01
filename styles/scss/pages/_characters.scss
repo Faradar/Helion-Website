@@ -6,36 +6,12 @@
 
         > div {
             @extend .image;
-
-            img {
-                @extend .image__item--aspect-ratio;
-            }
         }
 
         .organizations__ {
 
             &council {
                 @extend .image--margin--top;
-
-                a img {
-                    object-position: 0 -25px;
-                }
-            }
-
-            &knights a img {
-                object-position: 0 -130px;
-            }
-
-            &phoenix a img {
-                object-position: -100px -50px;
-            }
-
-            &arcanum a img {
-                object-position: -50px -50px;
-            }
-
-            &adventurers a img {
-                object-position: 0 -160px;
             }
         }
     }
@@ -55,18 +31,6 @@
 
             &ring {
                 @extend .image--margin--top;
-
-                a img {
-                    object-position: 0 -25px;
-                }
-            }
-
-            &melledril a img {
-                object-position: 0 -150px;
-            }
-
-            &palantir a img {
-                object-position: 0 -50px;
             }
         }
     }

@@ -182,10 +182,6 @@ header {
 .image--margin--top, .artifacts__gallery .artifacts__ring, .organizations__gallery .organizations__council, .places .places__arnoras {
   margin-top: 1.5em;
 }
-.image__item--aspect-ratio, .organizations__gallery > div img, .races__gallery > div img, .places__gallery > div img, .era .era__third a img, .era .era__dawn a img {
-  aspect-ratio: 1;
-  object-fit: cover;
-}
 @media screen and (min-width: 37.5em) {
   .image, .artifacts__gallery > div, .organizations__gallery > div, .races__gallery > div, .places__gallery > div, .era article a, .author img, .news article a {
     flex-basis: 50%;
@@ -547,18 +543,8 @@ header {
 .era .era__dawn {
   padding-top: 0;
 }
-.era__first a img {
-  translate: 0 -10%;
-}
-.era .era__second a img {
-  translate: 0 -10%;
-}
 .era .era__third {
   padding-bottom: 0;
-}
-.era .era__third a img {
-  transform: scale(1.5);
-  object-position: 20px;
 }
 
 /* Map Section */
@@ -575,13 +561,6 @@ header {
 }
 
 /* Places Section */
-.places .places__skyhold a img {
-  object-position: 0 -20px;
-}
-.places .places__order-dragon a img {
-  object-position: 50% -80px;
-}
-
 /* Races Section */
 .races > div {
   padding: 1.5em 0;
@@ -598,51 +577,8 @@ header {
 .races .races__5th {
   padding-bottom: 0;
 }
-.races__fusgra a img {
-  object-position: 0 -20px;
-}
-.races__aligerum-good a img {
-  object-position: left;
-}
-.races__aligerum-neutral a img {
-  object-position: 0 -30px;
-}
-.races__draconis a img {
-  object-position: top;
-}
-.races__gods a img {
-  object-position: -100px -50px;
-}
-.races__numenoreans a img {
-  object-position: 0 -15px;
-}
 
 /* Organization Section */
-.organizations__gallery .organizations__council a img {
-  object-position: 0 -25px;
-}
-.organizations__gallery .organizations__knights a img {
-  object-position: 0 -130px;
-}
-.organizations__gallery .organizations__phoenix a img {
-  object-position: -100px -50px;
-}
-.organizations__gallery .organizations__arcanum a img {
-  object-position: -50px -50px;
-}
-.organizations__gallery .organizations__adventurers a img {
-  object-position: 0 -160px;
-}
-
 /* Artifact Section */
-.artifacts__gallery .artifacts__ring a img {
-  object-position: 0 -25px;
-}
-.artifacts__gallery .artifacts__melledril a img {
-  object-position: 0 -150px;
-}
-.artifacts__gallery .artifacts__palantir a img {
-  object-position: 0 -50px;
-}
 
 /*# sourceMappingURL=style.css.map */

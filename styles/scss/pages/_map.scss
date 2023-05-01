@@ -21,10 +21,6 @@
 
         > div {
             @extend .image;
-
-            img {
-                @extend .image__item--aspect-ratio;
-            }
         }
     }
 
@@ -32,14 +28,6 @@
 
         &arnoras {
             @extend .image--margin--top;
-        }
-
-        &skyhold a img {
-            object-position: 0 -20px;
-        }
-
-        &order-dragon a img {
-            object-position: 50% -80px;
         }
     }
 }

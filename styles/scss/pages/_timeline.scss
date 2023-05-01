@@ -15,32 +15,13 @@
         padding-top: 0;
 
         @extend .float-display--reverse;
-
-        a img {
-            @extend .image__item--aspect-ratio;
-        }
-    }
-
-    &__first a img {
-        translate: 0 -10%;
     }
 
     .era__second {
         @extend .float-display--reverse;
-
-        a img {
-            translate: 0 -10%;
-        }
     }
 
     .era__third {
         padding-bottom: 0;
-
-        a img {
-            @extend .image__item--aspect-ratio;
-
-            transform: scale(1.5);
-            object-position: 20px;
-        }
     }
 }
