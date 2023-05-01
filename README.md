@@ -1,7 +1,7 @@
 # Medieval Fantasy Setting Website - Helion
-> Responsive website designed as the main project of the [Coderhouse web development course](https://www.coderhouse.com/online/desarrollo-web-online). What's mainly put in practice here is HTML and CSS (with a little personally added JS).
+> Responsive website designed as the main project of the <a href="https://www.coderhouse.com/online/desarrollo-web-online" target="_blank" rel="noopener">Coderhouse web development course</a>. What's mainly put in practice here is HTML and CSS (with a little personally added JS).
 
-> Live demo [_here_](https://faradar.github.io/PreEntrega3-Echeveste-Arteaga/).
+> Live demo <a href="https://faradar.github.io/PreEntrega3-Echeveste-Arteaga/" target="_blank" rel="noopener"><i>here</i></a>.
 
 
 ## Table of Contents
@@ -36,6 +36,9 @@ Project is created with:
 - BEM
 - Lightweight
 - SEO
+- Animated navbar
+- Customized images
+- Accesibility
 
 
 ## Project Status
@@ -48,14 +51,13 @@ Room for improvement:
 - The races and character pages are rather similar to each other and lack a distinguishing feature.
 
 To do:
-- Incorporate more SEO practices
 - Make the code more efficient.
 
 
 ## Acknowledgements
-- This website was inspired by [The Grishaverse](https://grishaverse.com/).
+- This website was inspired by <a href="https://grishaverse.com/" target="_blank" rel="noopener">The Grishaverse</a>.
 - Many thanks to Coderhouse for its course.
 
 
 ## Contact
-Created by [Tomás Echeveste Arteaga](https://github.com/faradar) - feel free to contact me at <echeveste.t@gmail.com>
+Created by <a href="https://github.com/faradar" target="_blank" rel="noopener">Tomás Echeveste Arteaga</a> - feel free to contact me at <echeveste.t@gmail.com>
