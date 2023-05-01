@@ -4,11 +4,11 @@
     article {
         padding-bottom: 1.5em;
 
-        @include float-display;
-
         a {
             @include image;
         }
+
+        @include float-display;
     }
 
     .era__dawn {

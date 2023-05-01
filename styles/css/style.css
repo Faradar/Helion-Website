@@ -467,8 +467,10 @@ header {
     flex-basis: 50%;
   }
 }
-.news .news__character a {
-  grid-column: 2/3;
+@media screen and (min-width: 48em) {
+  .news .news__character a {
+    grid-column: 2/3;
+  }
 }
 @media screen and (min-width: 48em) {
   .news__destination {
@@ -532,17 +534,6 @@ header {
 .era article {
   padding-bottom: 1.5em;
 }
-@media screen and (min-width: 48em) {
-  .era article {
-    max-width: 800px;
-    margin: 0 auto 0;
-    display: flow-root;
-  }
-  .era article a {
-    float: left;
-    margin: 1em 0.3em 0.1em 4em;
-  }
-}
 .era article a {
   width: 90%;
   aspect-ratio: 1;
@@ -557,16 +548,31 @@ header {
     flex-basis: 50%;
   }
 }
+@media screen and (min-width: 48em) {
+  .era article {
+    max-width: 800px;
+    margin: 0 auto 0;
+    display: flow-root;
+  }
+  .era article a {
+    float: left;
+    margin: 1em 0.3em 0.1em 4em;
+  }
+}
 .era .era__dawn {
   padding-top: 0;
 }
-.era .era__dawn a {
-  float: right;
-  margin: 1em 4em 0.1em 0.3em;
+@media screen and (min-width: 48em) {
+  .era .era__dawn a {
+    float: right;
+    margin: 1em 4em 0.1em 0.3em;
+  }
 }
-.era .era__second a {
-  float: right;
-  margin: 1em 4em 0.1em 0.3em;
+@media screen and (min-width: 48em) {
+  .era .era__second a {
+    float: right;
+    margin: 1em 4em 0.1em 0.3em;
+  }
 }
 .era .era__third {
   padding-bottom: 0;

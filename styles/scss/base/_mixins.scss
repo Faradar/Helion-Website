@@ -112,8 +112,10 @@
 
 @mixin grid-display--reverse {
 
-	a {
-		grid-column: 2 / 3;
+	@include tablet {
+		a {
+			grid-column: 2 / 3;
+		}
 	}
 }
 
@@ -135,8 +137,10 @@
 
 @mixin float-display--reverse {
 
-	a {
-		float: right;
-		margin: 1em 4em .1em .3em;
+	@include tablet {
+		a {
+			float: right;
+			margin: 1em 4em .1em .3em;
+		}
 	}
 }
