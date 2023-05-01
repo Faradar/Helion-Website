@@ -23,15 +23,15 @@
 .news {
 
 	article {
-		@extend .grid-display;
+		@include grid-display;
 
 		a {
-			@extend .image;
+			@include image;
 		}
 	}
 
 	.news__character {
-		@extend .grid-display--reverse;
+		@include grid-display--reverse;
 	}
 
 	@include tablet() {
@@ -43,10 +43,10 @@
 
 /* Author Section */
 .author {
-	@extend .grid-display;
+	@include grid-display;
 
 	img {
-		@extend .image;
+		@include image;
 	}
 }
 

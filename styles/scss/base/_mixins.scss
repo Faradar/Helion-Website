@@ -1,27 +1,3 @@
-/* Hide Content */
-@mixin hide {
-	position: absolute;
-	transform: scaleY(0);
-	z-index: -1;
-}
-
-/* Navbar animations */
-@mixin open-anim($numH: 1.2s, $numHD: 0s, $numT: .8s, $numTD: .2s) {
-	transform: scaleY(1);
-	max-height: 600px;
-	overflow: visible;
-	transition: max-height $numH $numHD,transform $numT $numTD;
-	transform-origin: top;
-}
-
-@mixin close-anim($numH: 1.2s, $numT: .8s) {
-	transform: scaleY(0);
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height $numH,transform $numT;
-	transform-origin: top;
-}
-
 /* ---------- Media Queries ---------- */
 
 /* 600px */
@@ -49,5 +25,118 @@
 @mixin desktop-lg {
 	@media screen and (min-width: 84em) {
 		@content;
+	}
+}
+
+/* Images */
+@mixin image {
+	width: 90%;
+	aspect-ratio: 1;
+	margin: 1em auto 0;
+	border: solid 3px $highlight-color;
+	max-width: 300px;
+	object-fit: cover;
+	overflow: hidden;
+
+	@include mobile-lg {
+		flex-basis: 50%;
+	}
+}
+
+@mixin image--margin--top {
+	margin-top: 1.5em;
+}
+
+/* Gallery */
+@mixin gallery {
+
+	@include mobile-lg {
+		max-width: 985px;
+		margin: 0 auto;
+		padding: 0 1em;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-end;
+		gap: 1em;
+	}
+
+	@include desktop-lg {
+		max-width: 1585px;
+	}
+}
+
+/* Hide Content */
+@mixin hide {
+	position: absolute;
+	transform: scaleY(0);
+	z-index: -1;
+}
+
+/* Navbar animations */
+@mixin open-anim($numH: 1.2s, $numHD: 0s, $numT: .8s, $numTD: .2s) {
+	transform: scaleY(1);
+	max-height: 600px;
+	overflow: visible;
+	transition: max-height $numH $numHD,transform $numT $numTD;
+	transform-origin: top;
+}
+
+@mixin close-anim($numH: 1.2s, $numT: .8s) {
+	transform: scaleY(0);
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height $numH,transform $numT;
+	transform-origin: top;
+}
+
+/* Grid image + text sections */
+@mixin grid-display {
+
+	@include tablet {
+		max-width: 1200px;
+		margin: 0 auto 0;
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+		a, img {
+			margin-top: 0;
+
+			grid-row: 1 / 3;
+			grid-column: 1 / 2;
+		}
+	}
+}
+
+@mixin grid-display--reverse {
+
+	a {
+		grid-column: 2 / 3;
+	}
+}
+
+/* Float image + text sections */
+@mixin float-display {
+
+    @include tablet {
+        max-width: 800px;
+        margin: 0 auto 0;
+
+        display: flow-root;
+
+        a {
+            float: left;
+            margin: 1em .3em .1em 4em;
+        }
+	}
+}
+
+@mixin float-display--reverse {
+
+	a {
+		float: right;
+		margin: 1em 4em .1em .3em;
 	}
 }

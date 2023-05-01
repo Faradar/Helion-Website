@@ -2,16 +2,16 @@
 .organizations {
 
     &__gallery {
-        @extend .gallery;
+        @include gallery;
 
         > div {
-            @extend .image;
+            @include image;
         }
 
         .organizations__ {
 
             &council {
-                @extend .image--margin--top;
+                @include image--margin--top;
             }
         }
     }
@@ -21,16 +21,16 @@
 .artifacts {
 
     &__gallery {
-        @extend .gallery;
+        @include gallery;
 
         > div {
-            @extend .image;
+            @include image;
         }
 
         .artifacts__ {
 
             &ring {
-                @extend .image--margin--top;
+                @include image--margin--top;
             }
         }
     }

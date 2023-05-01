@@ -14,10 +14,10 @@
     }
 
     &__gallery {
-        @extend .gallery;
+        @include gallery;
 
         > div {
-            @extend .image;
+            @include image;
         }
     }
 

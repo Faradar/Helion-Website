@@ -17,17 +17,17 @@
 .places {
 
     &__gallery {
-        @extend .gallery;
+        @include gallery;
 
         > div {
-            @extend .image;
+            @include image;
         }
     }
 
     .places__ {
 
         &arnoras {
-            @extend .image--margin--top;
+            @include image--margin--top;
         }
     }
 }
