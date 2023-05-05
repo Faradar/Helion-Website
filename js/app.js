@@ -42,7 +42,7 @@ mql.onchange = (e) => {
     if (e.matches) {
         /* The viewport is more than 600 pixels wide */
         navList.style.display = "flex";
-        navIcon.className = "fa fa-bars";
+        navIcon.className = "fa-solid fa-bars";
         navList.className = "navbar__list--visible";
         navLang.className = "navbar__dropdown-items";
         navLang.style.transition = "max-height 0s,transform 0s";
@@ -79,14 +79,14 @@ mql.onchange = (e) => {
 function openMenu() {
     if (navList.className === "navbar__list--visible") {
         navList.className = "navbar__list";
-        navIcon.className = "fa fa-bars";
+        navIcon.className = "fa-solid fa-bars";
         navLang.className = "navbar__dropdown-items";
         navMenu.ariaExpanded = "false";
         navList.ariaHidden = "true";
         navBtn.style.backgroundColor = backCol;
     } else {
         navList.className = "navbar__list--visible";
-        navIcon.className = "fa fa-times";
+        navIcon.className = "fa-solid fa-x";
         navMenu.ariaExpanded = "true";
         navList.ariaHidden = "false";
         mouseBtnBack(highCol, backCol);
