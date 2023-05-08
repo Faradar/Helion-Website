@@ -1,10 +1,22 @@
-/* General Styling */
+/* Fonts */
+@font-face {
+    font-family: 'LHFEncoreRegular';
+    src: url('../../fonts/LHFEncoreRegular.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/LHFEncoreRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../../fonts/LHFEncoreRegular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../../fonts/LHFEncoreRegular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../../fonts/LHFEncoreRegular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../../fonts/LHFEncoreRegular.svg#LHFEncoreRegular') format('svg'); /* Legacy iOS */
+    font-display: swap;
+}
 
 /* Configure the text that we select */
 ::selection {
 	background-color: $title-color;
 	color: $text-color;
 }
+
+/* General Styling */
 
 body {
 	font-family: $text-type;
