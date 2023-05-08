@@ -1,9 +1,4 @@
-/* Este archivo no hay codigo o estilos, lo unico que debe haber son imports */
-/* Main */
-/* Reset, Variables, Mixins and General Styles */
-/* Reset CSS */
-/* Reset Custom properties */
-/* Colors */
+/* Reset, Variables, Mixins and General Styles */ /* Colors */
 /* Typography */
 /* Reset the margin and padding */
 *, *::before, *::after {
@@ -429,7 +424,6 @@ header {
 }
 
 /* Pages */
-/* Introductory Section */
 /* Explore Section */
 @media screen and (min-width: 48em) {
   .explore__articles {
