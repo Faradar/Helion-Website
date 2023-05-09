@@ -17,11 +17,7 @@
 .places {
 
     &__gallery {
-        @include gallery;
-
-        > div {
-            @include image;
-        }
+        @include gallery-image;
     }
 
     .places__ {

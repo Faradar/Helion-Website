@@ -67,6 +67,17 @@
 	}
 }
 
+/* Gallery + Image */
+@mixin gallery-image {
+	@include gallery;
+
+        > article {
+            padding-top: 0;
+
+            @include image;
+        }
+}
+
 /* Hide Content */
 @mixin hide {
 	position: absolute;
@@ -95,7 +106,7 @@
 @mixin grid-display {
 
 	@include tablet {
-		max-width: 1200px;
+		max-width: 900px;
 		margin: 0 auto 0;
 
 		display: grid;

@@ -14,11 +14,7 @@
     }
 
     &__gallery {
-        @include gallery;
-
-        > div {
-            @include image;
-        }
+        @include gallery-image;
     }
 
     .races__1st {

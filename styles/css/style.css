@@ -101,6 +101,7 @@ body {
 /* 1312px */
 /* Images */
 /* Gallery */
+/* Gallery + Image */
 /* Hide Content */
 /* Navbar animations */
 /* Grid image + text sections */
@@ -443,7 +444,7 @@ header {
 /* News Section */
 @media screen and (min-width: 48em) {
   .news article {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -482,7 +483,7 @@ header {
 /* Author Section */
 @media screen and (min-width: 48em) {
   .author {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -610,7 +611,8 @@ header {
     max-width: 1585px;
   }
 }
-.places__gallery > div {
+.places__gallery > article {
+  padding-top: 0;
   width: 90%;
   aspect-ratio: 1;
   margin: 1em auto 0;
@@ -620,7 +622,7 @@ header {
   overflow: hidden;
 }
 @media screen and (min-width: 37.5em) {
-  .places__gallery > div {
+  .places__gallery > article {
     flex-basis: 50%;
   }
 }
@@ -655,7 +657,8 @@ header {
     max-width: 1585px;
   }
 }
-.races__gallery > div {
+.races__gallery > article {
+  padding-top: 0;
   width: 90%;
   aspect-ratio: 1;
   margin: 1em auto 0;
@@ -665,7 +668,7 @@ header {
   overflow: hidden;
 }
 @media screen and (min-width: 37.5em) {
-  .races__gallery > div {
+  .races__gallery > article {
     flex-basis: 50%;
   }
 }
@@ -694,7 +697,8 @@ header {
     max-width: 1585px;
   }
 }
-.organizations__gallery > div {
+.organizations__gallery > article {
+  padding-top: 0;
   width: 90%;
   aspect-ratio: 1;
   margin: 1em auto 0;
@@ -704,7 +708,7 @@ header {
   overflow: hidden;
 }
 @media screen and (min-width: 37.5em) {
-  .organizations__gallery > div {
+  .organizations__gallery > article {
     flex-basis: 50%;
   }
 }
@@ -730,7 +734,8 @@ header {
     max-width: 1585px;
   }
 }
-.artifacts__gallery > div {
+.artifacts__gallery > article {
+  padding-top: 0;
   width: 90%;
   aspect-ratio: 1;
   margin: 1em auto 0;
@@ -740,7 +745,7 @@ header {
   overflow: hidden;
 }
 @media screen and (min-width: 37.5em) {
-  .artifacts__gallery > div {
+  .artifacts__gallery > article {
     flex-basis: 50%;
   }
 }

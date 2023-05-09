@@ -2,11 +2,7 @@
 .organizations {
 
     &__gallery {
-        @include gallery;
-
-        > div {
-            @include image;
-        }
+        @include gallery-image;
 
         .organizations__ {
 
@@ -21,11 +17,7 @@
 .artifacts {
 
     &__gallery {
-        @include gallery;
-
-        > div {
-            @include image;
-        }
+        @include gallery-image;
 
         .artifacts__ {
 
