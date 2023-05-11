@@ -52,6 +52,8 @@
     <!-- Libraries -->
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/096d8e6171.js" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/css/style.css">
 </head>
@@ -61,14 +63,14 @@
     <h1 class="title title--hidden">Helion</h1> <!-- Only for HTML5 outline purposes -->
 
     <!-- Logo -->
-    <div class="logo">
+    <div class="logo" id="helion-logo" data-aos="fade-down" data-aos-duration="2000">
         <a href="../index.html" class="logo__img" aria-label="Home button"><img src="https://i.imgur.com/lOWlCyK.jpg" alt="Helion logo"></a>
     </div>
 
     <!-- Header -->
     <header>
         <!-- Navbar -->
-        <nav class="navbar">
+        <nav class="navbar" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-anchor="#helion-logo" data-aos-delay="300">
             <hr>
 
             <h2 class="title title--hidden">Main navigation bar</h2> <!-- Only for HTML5 outline purposes -->
@@ -78,6 +80,7 @@
             </a>
 
             <ul class="navbar__list" id="nav-list" aria-hidden="true">
+                <li><a href="../index.html">Helion</a></li>
                 <li><a href="timeline.html" class="navbar__item navbar__item--active">Timeline</a></li>
                 <li><a href="map.html">Map</a></li>
                 <li><a href="races.html">Races</a></li>
@@ -102,7 +105,7 @@
     <!-- Main -->
     <main>
         <!-- Introductory Section -->
-        <section class="introduction">
+        <section class="introduction" data-aos="fade-zoom-in" data-aos-duration="1500">
             <h2 class="main__title">The Timeline of Helion</h2>
 
             <p>The timeline of Helion spans hundreds of thousands of years. From the dawn era which takes place well over 200 thousand years ago, to the third and most recent era spanning over 400 years. Here we will give a brief introduction to each of the eras.</p>
@@ -114,7 +117,7 @@
         <section class="era">
             <h2 class="title title--hidden">The Eras of Helion</h2> <!-- Only for HTML5 outline purposes -->
             <!-- Dawn Era -->
-            <article class="era__dawn">
+            <article class="era__dawn" data-aos="fade-zoom-in" data-aos-duration="1500">
                 <h3>The Dawn Era</h3>
 
                 <a href="#"><img src="https://i.imgur.com/TZTTyi3.jpg" alt="The First Numenorean capital, the greatest city to have ever existed."></a>
@@ -127,7 +130,7 @@
             <hr>
 
             <!-- First Era -->
-            <article class="era__first">
+            <article class="era__first" data-aos="fade-zoom-in" data-aos-duration="1500">
                 <h3>The First Era</h3>
 
                 <a href="#"><img src="https://i.imgur.com/0txTMhr.jpg" alt="Battle between an angel and a demon."></a>
@@ -140,7 +143,7 @@
             <hr>
 
             <!-- Second Era -->
-            <article class="era__second">
+            <article class="era__second" data-aos="fade-zoom-in" data-aos-duration="1500">
                 <h3>The Second Era</h3>
 
                 <a href="#"><img src="https://i.imgur.com/5wE65Un.jpg" alt="Evil god destroying the world" loading="lazy"></a>
@@ -153,7 +156,7 @@
             <hr>
 
             <!-- Third Era -->
-            <article class="era__third">
+            <article class="era__third" data-aos="fade-zoom-in" data-aos-duration="1500">
                 <h3>The Third Era</h3>
 
                 <a href="#"><img src="https://i.imgur.com/krtcS0b.jpg" alt="Dragon burning an army" loading="lazy"></a>
@@ -169,7 +172,7 @@
     <!-- Footer -->
     <footer>
         <!-- Updates section -->
-        <section class="newsletter">
+        <section class="newsletter" data-aos="fade-zoom-in" data-aos-duration="1500">
             <h3>Sign up for updates</h3>
 
             <span class="subtitle">Be the first to get exclusive updates, sneak previews, and more!</span>
@@ -204,7 +207,7 @@
         <hr>
 
         <!-- Follow section -->
-        <section class="follow">
+        <section class="follow" data-aos="fade-zoom-in" data-aos-duration="1500">
             <h3>Follow us</h3>
 
             <div>
@@ -218,7 +221,7 @@
         <hr>
 
         <!-- Copyright section -->
-        <section class="copyright">
+        <section class="copyright" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
             <h3 class="title title--hidden">© All rights reserved Helion 2023</h3> <!-- Only for HTML5 outline purposes -->
 
             <div class="copyright__content">
@@ -235,6 +238,11 @@
         </section>
     </footer>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- JS -->
     <script src="../js/app.js"></script>
 </body>

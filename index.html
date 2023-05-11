@@ -52,6 +52,8 @@
     <!-- Libraries -->
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/096d8e6171.js" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="styles/css/style.css">
 </head>
@@ -61,14 +63,14 @@
     <h1 class="title title--hidden">Helion</h1> <!-- Only for HTML5 outline purposes -->
 
     <!-- Logo -->
-    <div class="logo">
+    <div class="logo" id="helion-logo" data-aos="fade-down" data-aos-duration="2000">
         <a href="index.html" class="logo__img" aria-label="Home button"><img src="https://i.imgur.com/lOWlCyK.jpg" alt="Helion logo"></a>
     </div>
 
     <!-- Header -->
     <header>
         <!-- Navbar -->
-        <nav class="navbar">
+        <nav class="navbar" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-anchor="#helion-logo" data-aos-delay="300">
             <hr>
 
             <h2 class="title title--hidden">Main navigation bar</h2> <!-- Only for HTML5 outline purposes -->
@@ -78,6 +80,7 @@
             </a>
 
             <ul class="navbar__list" id="nav-list" aria-hidden="true">
+                <li><a href="index.html" class="navbar__item navbar__item--active">Helion</a></li>
                 <li><a href="pages/timeline.html">Timeline</a></li>
                 <li><a href="pages/map.html">Map</a></li>
                 <li><a href="pages/races.html">Races</a></li>
@@ -101,10 +104,10 @@
 
     <!-- Main -->
     <main>
-        <h2>Welcome to the Continent of Helion</h2>
+        <h2 data-aos="fade-zoom-in" data-aos-duration="1500">Welcome to the Continent of Helion</h2>
 
         <!-- Introductory Section -->
-        <section class="introduction introduction--padding">
+        <section class="introduction introduction--padding" data-aos="fade-zoom-in" data-aos-duration="1500">
             <h3>What is Helion?</h3>
 
             <p>Helion is the name of a medieval fantasy setting set in the world of Gaia, in the continent of Helion.</p>
@@ -116,34 +119,34 @@
 
         <!-- Explore Section -->
         <section class="explore">
-            <h3>Explore the Continent of Helion</h3>
+            <h3 data-aos="fade-zoom-in" data-aos-duration="1500">Explore the Continent of Helion</h3>
 
             <div class="explore__articles">
-                <article class="explore__timeline">
+                <article class="explore__timeline" data-aos="fade-zoom-in" data-aos-duration="1500">
                     <h4>The Timeline</h4>
 
                     <p>This page contains details about the events that have transpired throughout the history of Helion. From the dawn era to the fourth era, the history of this world is plagued with fights of good against evil.</p>
                 </article>
 
-                <article class="explore__map">
+                <article class="explore__map" data-aos="fade-zoom-in" data-aos-duration="1500">
                     <h4>The Map</h4>
 
                     <p>Here you can find the map of the continent, along with a description of some of its many points of interest. From floating castles to seemingly cozy huts in the forest.</p>
                 </article>
 
-                <article class="explore__races">
+                <article class="explore__races" data-aos="fade-zoom-in" data-aos-duration="1500">
                     <h4>The Races</h4>
 
                     <p>There are many races in this setting, each with their own strengths and weaknesses. Some beholden to good, others to evil, and others who are free to choose, or not able to at all.</p>
                 </article>
 
-                <article class="explore__characters">
+                <article class="explore__characters" data-aos="fade-zoom-in" data-aos-duration="1500">
                     <h4>The Characters</h4>
 
                     <p>There are millions of beings that walk the vast continent of Helion. Some, however, have achieved feats so great or so terrible that they have etched their name in history. Here we will talk about some of the most interesting ones.</p>
                 </article>
 
-                <article class="explore__more">
+                <article class="explore__more" data-aos="fade-zoom-in" data-aos-duration="1500">
                     <h4>And much more!</h4>
 
                     <p>The alignments, the artifacts, the creatures, the beasts of Helion, there is just so much to talk about. But don't feel overwhelmed. Take it one step at a time. If you like the setting, feel free to use it for a campaign using whatever TTRPG (tabletop role-playing game) system you feel most comfortable with.</p>
@@ -155,9 +158,9 @@
 
         <!-- News Section -->
         <section class="news">
-            <h3>Latest News</h3>
+            <h3 data-aos="fade-zoom-in" data-aos-duration="1500">Latest News</h3>
 
-            <article class="news__character">
+            <article class="news__character" data-aos="fade-zoom-in" data-aos-duration="1500">
 
                 <h4>Trending Character</h4>
 
@@ -166,7 +169,7 @@
                 <a href="pages/characters.html"><img src="https://i.imgur.com/qUkBqht.png" alt="blinded swordsman" loading="lazy"></a>
             </article>
 
-            <article class="news__destination">
+            <article class="news__destination" data-aos="fade-zoom-in" data-aos-duration="1500">
 
                 <h4>Trending Destination</h4>
 
@@ -179,7 +182,7 @@
         <hr>
 
         <!-- Author Section -->
-        <section class="author">
+        <section class="author" data-aos="fade-zoom-in" data-aos-duration="1500">
             <h3>About the Author</h3>
 
             <p>Hey, that's me! Hi, my name is Tomás Echeveste Arteaga. I created this setting in hopes to use it to fuel my imagination and create great adventures for my friends. I'm a web developer that plays TTRPGs on the side. From Dungeons and Dragons to Anima: Beyond Fantasy, to Vampire: The Masquerade and many, many others. I hope you enjoy your stay!</p>
@@ -190,7 +193,7 @@
         <hr>
 
         <!-- Get in Touch Section -->
-        <section class="contact">
+        <section class="contact" data-aos="fade-zoom-in" data-aos-duration="1500">
             <h3>Get in Touch</h3>
 
             <span class="subtitle">Send a message to the Author</span>
@@ -230,7 +233,7 @@
     <!-- Footer -->
     <footer>
         <!-- Updates section -->
-        <section class="newsletter">
+        <section class="newsletter" data-aos="fade-zoom-in" data-aos-duration="1500">
             <h3>Sign up for updates</h3>
 
             <span class="subtitle">Be the first to get exclusive updates, sneak previews, and more!</span>
@@ -265,7 +268,7 @@
         <hr>
 
         <!-- Follow section -->
-        <section class="follow">
+        <section class="follow" data-aos="fade-zoom-in" data-aos-duration="1500">
             <h3>Follow us</h3>
 
             <div>
@@ -279,7 +282,7 @@
         <hr>
 
         <!-- Copyright section -->
-        <section class="copyright">
+        <section class="copyright" data-aos="fade-zoom-in" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
             <h3 class="title title--hidden">© All rights reserved Helion 2023</h3> <!-- Only for HTML5 outline purposes -->
 
             <div class="copyright__content">
@@ -296,6 +299,11 @@
         </section>
     </footer>
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- JS -->
     <script src="js/app.js"></script>
 </body>
