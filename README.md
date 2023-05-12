@@ -11,7 +11,6 @@
 * [Technologies](#technologies)
 * [Features](#features)
 * [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 
@@ -45,16 +44,7 @@ Project is created with:
 
 
 ## Project Status
-Project is: _in progress_.
-
-
-## Room for Improvement
-Room for improvement:
-- The design is rather simplistic and I would like to make it a bit more aesthetically pleasing.
-- The races and character pages are rather similar to each other and lack a distinguishing feature.
-
-To do:
-- Make the code more efficient.
+Project is: _Finished_.
 
 
 ## Acknowledgements

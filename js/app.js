@@ -12,8 +12,10 @@ const textCol = "#ffffff"; /* Text color variable from scss */
 /* Sets the proper class on startup based on screen width */
 if (mql.matches) {
     navList.className = "navbar__list--visible";
+    navList.ariaHidden = "false";
 } else {
     navList.className = "navbar__list";
+    navList.ariaHidden = "true";
 }
 
 /* Changes the background color of the button on mouse behaviour */
