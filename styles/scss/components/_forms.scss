@@ -40,7 +40,8 @@
 
         &:hover {
             background-color: $title-color;
-            transition: background-color 1s;
+            transform: scale(1.3);
+            transition: background-color 1s, transform 1s;
         }
     }
 

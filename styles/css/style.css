@@ -220,7 +220,8 @@ header {
 }
 .form .form__submit:hover, .form .contact__submit:hover, .contact__form .form__submit:hover, .contact__form .contact__submit:hover, .form .newsletter__submit:hover, .contact__form .newsletter__submit:hover, .newsletter__form .form__submit:hover, .newsletter__form .contact__submit:hover, .newsletter__form .newsletter__submit:hover {
   background-color: #feab42;
-  transition: background-color 1s;
+  transform: scale(1.3);
+  transition: background-color 1s, transform 1s;
 }
 .form .form__checkbox-label, .contact__form .form__checkbox-label, .form .newsletter__checkbox-label, .contact__form .newsletter__checkbox-label, .newsletter__form .form__checkbox-label, .newsletter__form .newsletter__checkbox-label {
   text-align: center;

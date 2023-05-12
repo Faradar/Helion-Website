@@ -31,6 +31,7 @@ Project is created with:
 - Font Awesome - version 6.4.0
 - JavaScript - ES6
 - SASS - version 1.62.0
+- AOS - version 3.0.0-beta.6
 
 
 ## Features
