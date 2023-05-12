@@ -198,9 +198,12 @@ header {
   margin: 0 auto 1em;
   border: solid 1px #666;
   border-radius: 3px;
-  background-color: #ffffff;
+  background-color: #877859;
   color: #000000;
   padding: 0.3em;
+}
+.form input::placeholder, .contact__form input::placeholder, .newsletter__form input::placeholder, .form__textarea::placeholder, .contact__textarea::placeholder {
+  color: #A4A4A4;
 }
 .form .form__verification *, .form .contact__verification *, .contact__form .form__verification *, .contact__form .contact__verification *, .newsletter__form .form__verification *, .newsletter__form .contact__verification * {
   text-align: center;

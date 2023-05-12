@@ -11,9 +11,13 @@
         margin: 0 auto 1em;
         border: solid 1px #666;
         border-radius: 3px;
-        background-color: $text-color;
+        background-color: $hover-color;
         color: $background-color;
         padding: 0.3em;
+
+        &::placeholder {
+            color: $placeholder-color;
+        }
     }
 
     .form__verification {
