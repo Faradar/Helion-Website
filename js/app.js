@@ -3,6 +3,7 @@ const navList = document.getElementById("nav-list");
 const navIcon = document.getElementById("nav-icon");
 const navLang = document.getElementById("nav-lang");
 const navBtn = document.getElementById("nav-btn");
+const navBtnIcon = document.getElementById("nav-btn-icon");
 const navMenu = document.getElementById("nav-menu");
 const backCol = "#000000"; /* Background color variable from scss */
 const highCol = "#c2a775"; /* Highlight color variable from scss */
@@ -54,6 +55,7 @@ mql.onchange = (e) => {
         navMenu.ariaExpanded = "false";
         navList.ariaHidden = "false";
         navBtn.ariaExpanded = "false";
+        navBtnIcon.className = "fa-solid fa-chevron-down";
 
         mouseBtnCol(highCol, textCol);
 
@@ -69,6 +71,7 @@ mql.onchange = (e) => {
         navBtn.style.color = textCol;
         navList.ariaHidden = "true";
         navBtn.ariaExpanded = "false";
+        navBtnIcon.className = "fa-solid fa-chevron-down";
 
         mouseBtnBack(highCol, backCol);
     }
@@ -99,6 +102,7 @@ function openDropdown() {
     if (navLang.className === "navbar__dropdown-items--visible") {
         navLang.className = "navbar__dropdown-items";
         navBtn.ariaExpanded = "false";
+        navBtnIcon.className = "fa-solid fa-chevron-down";
 
         if (!mql.matches) {
             navBtn.style.backgroundColor = highCol;
@@ -115,6 +119,7 @@ function openDropdown() {
     } else {
         navLang.className = "navbar__dropdown-items--visible";
         navBtn.ariaExpanded = "true";
+        navBtnIcon.className = "fa-solid fa-chevron-up";
 
         if (!mql.matches) {
             mouseBtnBack(highCol, highCol);
