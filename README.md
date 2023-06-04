@@ -1,9 +1,9 @@
 # Medieval Fantasy Setting Website - Helion
 > Responsive website designed as the main project of the <a href="https://www.coderhouse.com/online/desarrollo-web-online" target="_blank" rel="noopener">Coderhouse web development course</a>. What's mainly put in practice here is HTML and CSS (with a little personally added JS).
 
-> Live demo <a href="https://pf-echeveste-arteaga.vercel.app/" target="_blank" rel="noopener"><i>here</i></a>.
+> Live demo <a href="https://helion-website.vercel.app/" target="_blank" rel="noopener"><i>here</i></a>.
 
-> Alternative <a href="https://faradar.github.io/PF-Echeveste-Arteaga/" target="_blank" rel="noopener"><i>here</i></a>.
+> Alternative <a href="https://faradar.github.io/Helion-Website/" target="_blank" rel="noopener"><i>here</i></a>.
 
 
 ## Table of Contents
