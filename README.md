@@ -27,8 +27,8 @@ I chose a medieval fantasy setting as the baseline of my website for a couple of
 Project is created with:
 - HTML5
 - CSS3
+- JavaScript
 - Font Awesome - version 6.4.0
-- JavaScript - ES6
 - SASS - version 1.62.0
 - AOS - version 3.0.0-beta.6
 
